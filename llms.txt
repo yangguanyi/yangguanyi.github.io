@@ -1,6 +1,6 @@
 # Guanyi Yang — research
 
-> Economist at Colorado College. Heterogeneous-agent macroeconomics, labor and education, environmental valuation (dark skies, light pollution), emerging-market business cycles, children and schooling in rural China. Each paper below has a page with the abstract, main numbers, scope limits and all public versions, plus a plain-text llms.txt.
+> Economist at Colorado College. Heterogeneous-agent macroeconomics, labor and education, environmental valuation (dark skies), emerging-market business cycles, children and schooling in rural China. Each paper below has a page with the abstract, main numbers, scope limits and all public versions, plus a plain-text llms.txt.
 
 ## Papers
 

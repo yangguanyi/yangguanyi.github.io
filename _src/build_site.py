@@ -233,7 +233,7 @@ def more_page():
     return "more/", page("More — Guanyi Yang", "\n".join(b), "Media coverage, consulting, resources for students, and other things.", "more/")
 
 def root_llms():
-    L = ["# Guanyi Yang — research", "", "> Economist at Colorado College. Heterogeneous-agent macroeconomics, labor and education, environmental valuation (dark skies, light pollution), emerging-market business cycles, children and schooling in rural China. Each paper below has a page with the abstract, main numbers, scope limits and all public versions, plus a plain-text llms.txt.", "", "## Papers", ""]
+    L = ["# Guanyi Yang — research", "", "> Economist at Colorado College. Heterogeneous-agent macroeconomics, labor and education, environmental valuation (dark skies), emerging-market business cycles, children and schooling in rural China. Each paper below has a page with the abstract, main numbers, scope limits and all public versions, plus a plain-text llms.txt.", "", "## Papers", ""]
     for p in sorted(pd.PAPERS, key=lambda p:-p["year"]):
         L.append(f"- [{p['title']}]({BASE}/papers/{p['slug']}/): {p['one_liner']} ({p['venue']}, {p['year']}). Summary: {BASE}/papers/{p['slug']}/llms.txt")
     L += ["", "## Themes", ""] + [f"- [{v['title']}]({BASE}/themes/{k}/)" for k,v in pd.THEMES.items()]
