@@ -1,0 +1,61 @@
+# Does Wealth Matter? An Assessment of China’s Rural-Urban Migration on the Education of Left-Behind Children
+
+> Parental migration raises the chance that a left-behind child in rural China is enrolled in school on time when the family is poor, but the benefit shrinks as family wealth rises and reverses above a house size of about 148 square meters; poorer migrant parents compensate for lost time by spending more on schooling.
+
+Authors: Guanyi Yang (Colorado College (St. Lawrence University at publication)); Cynthia Bansak (St. Lawrence University)
+Status: China Economic Review, Vol. 59, 101365. DOI 10.1016/j.chieco.2019.101365
+Page: https://yangguanyi.github.io/papers/left-behind-children-parental-migration-wealth/
+
+## What is this paper about?
+
+Parental migration raises the chance that a left-behind child in rural China is enrolled in school on time when the family is poor, but the benefit shrinks as family wealth rises and reverses above a house size of about 148 square meters; poorer migrant parents compensate for lost time by spending more on schooling.
+
+## Abstract
+
+This paper decomposes the impact of parental migration on the education of children left behind. In particular, we examine whether children are enrolled in school on a timely basis according to their age when their parents are away. We found both theoretical and empirical evidence to support that parental migration generates a strong positive impact on timely enrollment if a child is from a less wealthy background. However, the effect decreases with family wealth, and reverses after reaching a threshold; we find this point using family house size as our proxy and the turning point occurs at a moderate size of approximately 148 square meters. In addition, we find a compensating effect that migrants tend to spend more on a child’s education investment to offset for the loss of parental time care. Lastly, we found the overall impact of parental migration is negative on the timely enrollment of child. Thus, with the important heterogeneities attributed to wealth, our results suggest that the left behind children of more affluent parents may be pushed into worse human capital outcomes; given the rapid development of China, it may be the case that the current cohort of left behind children is less likely to be enrolled in school than earlier cohorts.
+
+## Key results
+
+- Below the 148 m² house-size threshold, having a migrant parent raises timely enrollment (IV estimate with controls: +32.9 percentage points), and the effect falls by about 1.2 percentage points for each additional square meter of house size.
+- Above the threshold, the effect of migration is negative or statistically insignificant.
+- Compensation channel: children of poorer migrant parents are 18.4 percentage points more likely to take a bus to school, a proxy for paying for a farther or better school; bus-taking is associated with about 2,000 yuan more in annual education spending.
+- Without controls, migration lowers timely enrollment by 42.9 percentage points overall; with demographic, household and community controls the overall effect disappears, while the wealth-heterogeneous effect remains.
+- Child weight shows the same pattern: migration raises it for poorer households, with a smaller effect as wealth rises.
+
+## Limitations and scope (what the paper does not show)
+
+- Wealth is proxied by house size, the most consistently recorded rural asset in the CHNS; the outcome is timely enrollment for the child’s age, not attainment or test scores.
+- Identification relies on instruments for migration (1997 community migrant networks interacted with provincial wage growth) and for house size (parents’ height); the exclusion restrictions are argued, not tested.
+- Main results are driven by the lower-wealth subsample; estimates for wealthier households are imprecise.
+
+## Important context and definitions
+
+- The theoretical model has two channels: migrants compensate lost parental time with resources, and the marginal return to those resources falls with wealth, so the net effect of migration turns negative for wealthier families.
+- The hukou residential registration system is why rural migrants usually leave children behind.
+
+## Data and methods
+
+Data: China Health and Nutrition Survey, 1997, 2000, 2004, 2006, 2009, 2011 and 2015 waves; rural households with children aged 18 or younger in 12 provinces: 4,502 children, 2,826 households, 175 communities, 14,298 child-year observations.
+Method: Two-period parental decision model with human capital produced from time and resources; instrumental-variable regressions of timely enrollment on migration, house size and their interaction, split at the 148 m² threshold; IV regressions for the bus-to-school compensation channel; household-clustered standard errors.
+Contribution: A theoretical and empirical decomposition of parental migration’s effect on children by family wealth, reconciling conflicting findings in the left-behind-children literature.
+
+## Related work
+
+- Mu, R. and A. de Brauw (2015). Migration and young child nutrition: evidence from rural China. Journal of Population Economics 28(3): 631–657. https://doi.org/10.1007/s00148-015-0550-3
+- Zhou, M., R. Murphy and R. Tao (2014). Effects of parents’ migration on the education of children left behind in rural China. Population and Development Review 40(2): 273–292. https://doi.org/10.1111/j.1728-4457.2014.00673.x
+- Wang, X., Y. Bai, L. Zhang and S. Rozelle (2017). Migration, schooling choice, and student outcomes in China. Population and Development Review 43(4): 625–643. https://doi.org/10.1111/padr.12101
+- Hu, F. (2012). Migration, remittances, and children’s high school attendance: the case of rural China. International Journal of Educational Development 32(3): 401–411. https://doi.org/10.1016/j.ijedudev.2011.08.001
+- Démurger, S. and H. Xu (2015). Left-behind children and return migration in China. IZA Journal of Migration 4: 10. https://doi.org/10.1186/s40176-015-0035-x
+- Del Boca, D., C. Flinn and M. Wiswall (2014). Household choices and child development. Review of Economic Studies 81(1): 137–185. https://doi.org/10.1093/restud/rdt026
+
+## Versions
+
+- Published article (Elsevier): https://doi.org/10.1016/j.chieco.2019.101365
+- RePEc listing: https://ideas.repec.org/f/pya376.html
+
+JEL: I25, J13, O15, R23
+Keywords: wealth heterogeneity, human capital, China, rural-urban migration, absenteeism, parental inputs, left-behind children
+
+## Cite
+
+Guanyi Yang, Cynthia Bansak (2020). Does Wealth Matter? An Assessment of China’s Rural-Urban Migration on the Education of Left-Behind Children. China Economic Review, Vol. 59, 101365. https://doi.org/10.1016/j.chieco.2019.101365

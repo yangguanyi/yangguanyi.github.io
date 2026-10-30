@@ -1,0 +1,57 @@
+# How Much Does Schooling Disutility Matter?
+
+> Adding a disutility-of-schooling term to a structural education-choice model is equivalent to assuming a relationship between wealth, risk and schooling: with the term present, the utility return to education falls with wealth and, when agents have a precautionary saving motive, rises with the riskiness of future consumption.
+
+Authors: Guanyi Yang (Colorado College (St. Lawrence University at publication)); Ben Casner (Federal Trade Commission)
+Status: Research in Economics, Vol. 75, No. 1, pp. 87–95. DOI 10.1016/j.rie.2020.11.004
+Page: https://yangguanyi.github.io/papers/schooling-disutility/
+
+## What is this paper about?
+
+Adding a disutility-of-schooling term to a structural education-choice model is equivalent to assuming a relationship between wealth, risk and schooling: with the term present, the utility return to education falls with wealth and, when agents have a precautionary saving motive, rises with the riskiness of future consumption.
+
+## Abstract
+
+Studies on structural education choice models are often inconsistent in choosing whether and how to include a disutility of education, especially in an environment with risk and wealth inequality. We show that adding a disutility term to the education decision, a human capital investment option, is equivalent to assuming a relationship between wealth, risk, and education. Utility gain from education is increasing in the riskiness of future consumption. A riskier environment further propels an agent to choose the human capital investment option that maximizes future income. If the degree of risk increases heterogeneously across multiple human capital investment options, risk aversion and the precautionary savings motive can compound or negate each other depending on which option has a greater increase in risk.
+
+## Key results
+
+- Proposition 1: if schooling has a positive financial return and marginal utility is convex (precautionary saving), a mean-preserving spread in future consumption risk raises the utility return to education.
+- Proposition 2: if both schooling and working become riskier but schooling’s risk rises by not too much more, the precautionary-saving effect still dominates risk aversion and schooling becomes more attractive.
+- The utility return to education is decreasing in initial wealth (extending Belley and Lochner 2007 to a risky environment), so the range of human capital for which an agent chooses school narrows with wealth.
+- Implication for estimation: counterfactuals from models that include a disutility term embed these wealth–risk–schooling relations by assumption; models that omit it may understate the role of wealth and risk.
+
+## Limitations and scope (what the paper does not show)
+
+- A two-period decision model without general equilibrium, bankruptcy, or estimation; disutility is held constant rather than varying with human capital.
+
+## Important context and definitions
+
+- The paper is agnostic about whether students actually experience disutility; its point is the consequence of including or excluding the term in structural work.
+- Previously circulated as “The Relationship Between Disutility of Education, Wealth, and Schooling Decisions”.
+
+## Data and methods
+
+Data: None (theoretical).
+Method: Two-period model of schooling versus work with consumption-saving choice, CRRA utility in the numerical example, mean-preserving spreads following Rothschild and Stiglitz (1970), and envelope-theorem proofs.
+Contribution: Identifies the implicit assumptions introduced by a schooling disutility term in structural models and adds the precautionary-saving (third-derivative) channel to the risk-and-schooling literature.
+
+## Related work
+
+- Belley, P. and L. Lochner (2007). The changing role of family income and ability in determining educational achievement. Journal of Human Capital 1(1): 37–89. https://doi.org/10.1086/524674
+- Levhari, D. and Y. Weiss (1974). The effect of risk on the investment in human capital. American Economic Review 64(6): 950–963. https://www.jstor.org/stable/1815244
+- Hartog, J. and L. Diaz-Serrano (2015). Why do we ignore the risk in schooling decisions? De Economist 163(2): 125–153. https://doi.org/10.1007/s10645-014-9245-5
+- Leland, H. E. (1968). Saving and uncertainty: the precautionary demand for saving. Quarterly Journal of Economics 82(3): 465–473. https://doi.org/10.2307/1879518
+- Yang, G. (2025). Better late than never: macroeconomic impact of intermittent college enrollment and tuition subsidies. Journal of Economic Dynamics and Control 181: 105219. https://doi.org/10.1016/j.jedc.2025.105219
+
+## Versions
+
+- Published article (Elsevier): https://doi.org/10.1016/j.rie.2020.11.004
+- RePEc listing: https://ideas.repec.org/f/pya376.html
+
+JEL: D11, I2, J24
+Keywords: structural estimation, human capital theory, disutility of schooling, education choices, precautionary saving, risk
+
+## Cite
+
+Guanyi Yang, Ben Casner (2021). How Much Does Schooling Disutility Matter?. Research in Economics, Vol. 75, No. 1, pp. 87–95. https://doi.org/10.1016/j.rie.2020.11.004

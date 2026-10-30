@@ -1,0 +1,54 @@
+# The Effect of College Major on Labor Market Outcomes of Chinese Immigrants: An Examination of Undergraduate Major Choices and Their Impact on Employment and Earnings
+
+> Among college-educated Chinese immigrant men in the 2009 American Community Survey, 36 percent majored in engineering and all five most common majors were in STEM or business, a pattern statistically different from Japanese and Korean immigrants and native-born whites; a major’s popularity among Chinese immigrants is weakly and positively related to its employment probability and earnings.
+
+Authors: Guanyi Yang (Colorado College (Ohio Wesleyan University and Ohio State University at publication))
+Status: Journal of the Knowledge Economy, Vol. 6, No. 4, pp. 1138–1162 (published online 28 March 2014). DOI 10.1007/s13132-014-0199-2
+Page: https://yangguanyi.github.io/papers/college-major-chinese-immigrants/
+
+## What is this paper about?
+
+Among college-educated Chinese immigrant men in the 2009 American Community Survey, 36 percent majored in engineering and all five most common majors were in STEM or business, a pattern statistically different from Japanese and Korean immigrants and native-born whites; a major’s popularity among Chinese immigrants is weakly and positively related to its employment probability and earnings.
+
+## Abstract
+
+Education is a crucial factor that determines labor market outcomes, especially for immigrants. This paper specifically examines the undergraduate major choice for Chinese immigrants and its relationship to their labor market outcome. Compared to other Asian groups and the mainstream society, Chinese immigrants are uniquely congregated in business and science categories. The level of popularity to a major is positively related to their labor market outcome. This finding reveals the current premarket educational investment pattern for Chinese immigrants and adds to the existing literature by focusing on how detail education quality in terms of major relates to labor market performance.
+
+## Key results
+
+- Major shares among Chinese immigrant graduates: engineering 36 percent, math and computer science 13.9 percent, business 13 percent, physical science 10.2 percent, biology and life science 8.5 percent.
+- Biology, physical science, and math and computer science are among both the five most popular majors and the five with the highest employment probability.
+- Samples: 3,990 Chinese immigrants (logit for employment); 3,209 Chinese, 699 Japanese, 1,381 Korean immigrants and 14,232 native-born non-Hispanic whites (log earnings).
+
+## Limitations and scope (what the paper does not show)
+
+- Men aged 25–70 with at least a bachelor’s degree in the 2009 ACS; descriptive associations, not causal estimates.
+
+## Important context and definitions
+
+- The paper draws on the ‘blocked opportunities’ and comparative-ability explanations for Asian Americans’ concentration in science fields (Xie and Goyette 2004).
+- Written as an undergraduate thesis at Ohio Wesleyan University.
+
+## Data and methods
+
+Data: American Community Survey 2009 (IPUMS), 1 percent sample; 38 ACS major categories recoded into 15 groups following the Georgetown Center on Education and the Workforce.
+Method: Logit models of employment and log-linear earnings regressions by group, with controls for education level, age, years in the U.S., English proficiency, marital status, children, citizenship, region, occupation and self-employment.
+Contribution: Separates Chinese immigrants from the broader ‘Asian American’ category and links field of study to employment and pay.
+
+## Related work
+
+- Xie, Y. and K. Goyette (2004). A Demographic Portrait of Asian Americans. Russell Sage Foundation and Population Reference Bureau.
+- Black, D., A. Haviland, S. Sanders and L. Taylor (2006). Why do minority men earn less? A study of wage differentials among the highly educated. Review of Economics and Statistics 88(2): 300–313. https://doi.org/10.1162/rest.88.2.300
+- Chiswick, B. R. and P. W. Miller (2009). The international transferability of immigrants’ human capital. Economics of Education Review 28(2): 162–169. https://doi.org/10.1016/j.econedurev.2008.07.002
+
+## Versions
+
+- Published article (Springer): https://doi.org/10.1007/s13132-014-0199-2
+- RePEc listing: https://ideas.repec.org/f/pya376.html
+
+JEL: J15, J24, J61, I23
+Keywords: labor, immigration, higher education, human capital, Asian immigrants
+
+## Cite
+
+Guanyi Yang (2015). The Effect of College Major on Labor Market Outcomes of Chinese Immigrants: An Examination of Undergraduate Major Choices and Their Impact on Employment and Earnings. Journal of the Knowledge Economy, Vol. 6, No. 4, pp. 1138–1162 (published online 28 March 2014). https://doi.org/10.1007/s13132-014-0199-2

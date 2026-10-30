@@ -1,0 +1,58 @@
+# Welfare Under Friction and Uncertainty: General Equilibrium Evaluation of Temporary Employment in the U.S.
+
+> In a U.S.-calibrated general equilibrium model with heterogeneous firms, temporary contracts act as a buffer against firing costs and rising firm-level risk, reducing the welfare loss from higher firing costs by about 1.3 percent, but they do not restore the efficiency lost to those frictions and are not equivalent to cutting firing costs.
+
+Authors: Guanyi Yang (Colorado College (St. Lawrence University at publication))
+Status: Research in Economics, Vol. 72, No. 3, pp. 404–413. DOI 10.1016/j.rie.2018.07.005
+Page: https://yangguanyi.github.io/papers/temporary-employment-us-welfare/
+
+## What is this paper about?
+
+In a U.S.-calibrated general equilibrium model with heterogeneous firms, temporary contracts act as a buffer against firing costs and rising firm-level risk, reducing the welfare loss from higher firing costs by about 1.3 percent, but they do not restore the efficiency lost to those frictions and are not equivalent to cutting firing costs.
+
+## Abstract
+
+Temporary contracts usually fall outside of employee protection litigation, thus they are often cheaper than permanent contracts and are offered on-demand by firms. In the last two decades, there has been a sharp growth in such contracts in the U.S. labor market. This paper investigates the welfare consequences of offering temporary contracts in the U.S., an environment with low employee protection litigation and high production risk for firms. Employee protection litigation creates firing rigidity in regular labor markets. Pairing firing rigidity with high production risk, firms reduce employment and output, which generates welfare loss. The inexpensive and flexible nature of temporary contracts offers firms a buffer strategy in making employment decisions under risk and navigating the firing rigidity of the regular labor sector, thereby reducing welfare loss. However, temporary contracts cannot fully compensate for the efficiency cost from rising firing rigidity and risk.
+
+## Key results
+
+- Raising firing costs from zero to one year’s wage lowers output to 95.25 percent of baseline with temporary contracts available versus 93.92 percent without; the welfare loss is about 1.3 percent smaller with temporary contracts.
+- Doubling firm-level idiosyncratic volatility (as documented by Comin and Philippon 2006) with firing costs in place: welfare falls to 86 percent with temporary contracts versus 84 percent without; job turnover rises less (141 vs 156 percent of baseline).
+- Firing costs create an inverse-Z ‘inefficiency band’ in firms’ hiring rule; temporary contracts widen it because firms substitute toward less productive temps to avoid firing costs.
+- U.S. facts assembled in the appendix: temporary help employment grew from about 0.25 percent of employment in 1972 to about 3 percent in 2000; it is four times as volatile as GDP, leads total employment in recessions and recoveries, and accounts for over 20 percent of job losses and up to 55 percent of job gains despite a roughly 2 percent share.
+
+## Limitations and scope (what the paper does not show)
+
+- Annual model period, so within-year temp turnover is not captured; no firm entry or exit; a representative household.
+- Calibrated to the U.S. with a 2 percent temporary share and a 0.7 wage ratio; results are model-based welfare comparisons, not causal estimates.
+
+## Important context and definitions
+
+- The model extends Hopenhayn and Rogerson (1993) with two labor inputs: regular labor subject to a firing cost and temporary labor hired period by period.
+- The paper argues against treating temporary employment as equivalent to a firing-tax reduction, the interpretation in Aguirregabiria and Alonso-Borrego (2014) for Spain.
+
+## Data and methods
+
+Data: Longitudinal Business Database firm-size distribution 1977–2013; BLS Current Employment Statistics for temporary help services, 1972–2015; wage ratio and labor share targets.
+Method: Dynamic general equilibrium model with heterogeneous firms facing AR(1) idiosyncratic productivity (Tauchen discretization), CES production in regular and temporary labor, a linear firing cost on regular labor, and a representative household with indivisible labor; calibrated to U.S. moments; counterfactuals vary firing costs and volatility with and without temporary contracts.
+Contribution: Brings the temporary-contract welfare question to the U.S. setting of low rigidity and high firm risk, with an endogenous temporary-employment share rather than an exogenous one.
+
+## Related work
+
+- Hopenhayn, H. and R. Rogerson (1993). Job turnover and policy evaluation: a general equilibrium analysis. Journal of Political Economy 101(5): 915–938. https://doi.org/10.1086/261909
+- Aguirregabiria, V. and C. Alonso-Borrego (2014). Labor contracts and flexibility: evidence from a labor market reform in Spain. Economic Inquiry 52(2): 930–957. https://doi.org/10.1111/ecin.12077
+- Autor, D. H. and S. N. Houseman (2010). Do temporary-help jobs improve labor market outcomes for low-skilled workers? Evidence from ‘Work First’. American Economic Journal: Applied Economics 2(3): 96–128. https://doi.org/10.1257/app.2.3.96
+- Cahuc, P. and F. Postel-Vinay (2002). Temporary jobs, employment protection and labor market performance. Labour Economics 9(1): 63–91. https://doi.org/10.1016/s0927-5371(01)00051-3
+- Comin, D. A. and T. Philippon (2005). The rise in firm-level volatility: causes and consequences. NBER Working Paper 11388; published in NBER Macroeconomics Annual 20 (2006): 167–228. https://doi.org/10.3386/w11388
+
+## Versions
+
+- Published article (Elsevier): https://doi.org/10.1016/j.rie.2018.07.005
+- RePEc listing: https://ideas.repec.org/f/pya376.html
+
+JEL: E24, C68, J30
+Keywords: labor market misallocation, temporary employment, firing costs, idiosyncratic uncertainty, general equilibrium, heterogeneous agents
+
+## Cite
+
+Guanyi Yang (2018). Welfare Under Friction and Uncertainty: General Equilibrium Evaluation of Temporary Employment in the U.S.. Research in Economics, Vol. 72, No. 3, pp. 404–413. https://doi.org/10.1016/j.rie.2018.07.005

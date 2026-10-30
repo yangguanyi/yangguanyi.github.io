@@ -1,0 +1,61 @@
+# Artificial Light Exposure During Pregnancy and Infant Health
+
+> Using the universe of U.S. births from 2014 to 2018 linked to satellite nighttime radiance, a 10 percent increase in average light exposure during pregnancy reduces birth weight by roughly 0.4 to 2 percent (13 to 65 grams) and raises the probability of NICU admission by about 1 to 3 percentage points, with the largest effects in urban, high-air-pollution areas and among infants born to non-Hispanic Black mothers.
+
+Authors: Andrés Azqueta-Gavaldón (Banco de España); Ella Reese-Clauson (Colorado College); Guanyi Yang (Colorado College)
+Status: Working paper, Preliminary draft, March 4, 2026
+Page: https://yangguanyi.github.io/papers/light-pollution-infant-health/
+
+## What is this paper about?
+
+Using the universe of U.S. births from 2014 to 2018 linked to satellite nighttime radiance, a 10 percent increase in average light exposure during pregnancy reduces birth weight by roughly 0.4 to 2 percent (13 to 65 grams) and raises the probability of NICU admission by about 1 to 3 percentage points, with the largest effects in urban, high-air-pollution areas and among infants born to non-Hispanic Black mothers.
+
+## Abstract
+
+Artificial light at night (ALAN) is a pervasive feature of modern environments, yet its effects on fetal development remain poorly understood. Using U.S. birth records linked to satellite-based measures of gestational nighttime radiance, we estimate the impact of prenatal light exposure on infant health. A 10 percent increase in average gestational radiance reduces birth weight by roughly 0.4 to 2 percent (13 to 65 grams at the mean) and increases neonatal intensive care unit admission by about 1 to 3 percentage points. Effects are largest in urban and high air-pollution areas and among infants born to non-Hispanic Black mothers. We estimate these effects using flexible machine-learning methods and complement them with an instrumental-variables strategy that exploits quasi-random variation in the satellite retrieval process to assess attenuation from measurement error.
+
+## Key results
+
+- Sample: 12,027,573 live births, National Vital Statistics System, January 2014–December 2018, linked to county-month VIIRS Black Marble radiance averaged over gestational months.
+- Birth weight: a 10 percent increase in gestational radiance lowers birth weight by 0.84 percent (OLS), about 2.1 percent or roughly 70 grams (double machine learning), and about 4.5 percent (instrumental variables).
+- NICU admission: +0.25 percentage points (OLS), +3.4 percentage points on a 7.4 percent base (double machine learning); the IV estimate is roughly four times the DML estimate.
+- Urban counties −2.4 percent birth weight vs rural −0.9 percent; worst air-quality quartile −2.3 percent vs best quartile −1.5 percent, with a monotonic gradient.
+- By maternal race and ethnicity: non-Hispanic Black −3.25 percent, non-Hispanic White −2.14 percent, Hispanic −1.04 percent, Asian −1.17 percent.
+- The estimates follow a consistent ordering, |OLS| < |DML| < |IV|, which the authors read as evidence that linear models understate the effect.
+
+## Limitations and scope (what the paper does not show)
+
+- Exposure is county-month outdoor radiance from satellites, not indoor light reaching the mother; residence is measured at delivery. Both forms of error are expected to bias estimates toward zero.
+- The double machine learning estimates rest on selection on observables; the IV estimates identify a local average treatment effect driven by satellite observation quality.
+- No biological mechanism (sleep, circadian disruption) is identified.
+- Preliminary draft; results may change.
+
+## Important context and definitions
+
+- “Artificial light at night (ALAN)” is the term used in the health literature; the exposure measure is the VIIRS Black Marble monthly stray-light-corrected composite (VCMSLCFG), in nW/cm²/sr.
+- The instrument is an index of satellite retrieval quality (Black Marble Mandatory Quality Flags), used as a shifter of measurement error, not of true illumination. This differs from Argys, Averett and Yang (2021), who instrument skyglow with Walker’s law.
+
+## Data and methods
+
+Data: Restricted-use NVSS natality microdata, all U.S. births 2014–2018 (12.03 million); NASA Black Marble VIIRS monthly radiance and daily quality flags; EPA Air Quality Index; county unemployment, population and income.
+Method: OLS with state and year-month fixed effects; double/debiased machine learning (Chernozhukov et al. 2018) with random forests, gradient boosting and lasso, five-fold cross-fitting; instrumental variables using satellite observation quality; standard errors clustered by county × year-month.
+Contribution: Population-scale evidence that prenatal exposure to artificial light at night worsens birth outcomes, with a measurement-error correction built from the satellite retrieval process itself.
+
+## Related work
+
+- Argys, L. M., S. L. Averett and M. Yang (2021). Light pollution, sleep deprivation, and infant health at birth. Southern Economic Journal 87(3): 849–888. https://doi.org/10.1002/soej.12477
+- Currie, J. and R. Walker (2011). Traffic congestion and infant health: evidence from E-ZPass. American Economic Journal: Applied Economics 3(1): 65–90. https://doi.org/10.1257/app.3.1.65
+- Chernozhukov, V., D. Chetverikov, M. Demirer, E. Duflo, C. Hansen, W. Newey and J. Robins (2018). Double/debiased machine learning for treatment and structural parameters. Econometrics Journal 21(1): C1–C68. https://doi.org/10.1111/ectj.12097
+- Román, M. O. et al. (2018). NASA’s Black Marble nighttime lights product suite. Remote Sensing of Environment 210: 113–143. https://doi.org/10.1016/j.rse.2018.03.017
+- Henderson, J. V., A. Storeygard and D. N. Weil (2012). Measuring economic growth from outer space. American Economic Review 102(2): 994–1028. https://doi.org/10.1257/aer.102.2.994
+
+## Versions
+
+- Preliminary draft, March 4, 2026 (PDF): https://yangguanyi.github.io/pdf/Azqueta-Gavaldon-Reese-Clauson-Yang-2026-Artificial-Light-Pregnancy-Infant-Health.pdf
+
+JEL: I10, Q53, J13, I14
+Keywords: artificial light at night, light pollution, infant health, prenatal environmental exposure, birth outcomes, environmental inequality
+
+## Cite
+
+Andrés Azqueta-Gavaldón, Ella Reese-Clauson, Guanyi Yang (2026). Artificial Light Exposure During Pregnancy and Infant Health. Working paper, Preliminary draft, March 4, 2026.

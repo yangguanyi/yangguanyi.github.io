@@ -1,0 +1,59 @@
+# How Much Versus Who: Which Social Norms Information Is More Effective?
+
+> In a randomized survey of 559 college students voting on a hypothetical ‘green fee’, telling them that 85 percent of peers at other schools voted yes raised stated contributions by about $7–8 (roughly 25 percent), while telling them the dollar range of peer fees lowered contributions by about $8–9; given both pieces of information, the effects cancelled.
+
+Authors: Andrew Meyer (Marquette University); Guanyi Yang (Colorado College (Ohio State University at publication))
+Status: Applied Economics, Vol. 48, No. 5, pp. 389–401 (published online 11 September 2015). DOI 10.1080/00036846.2015.1080803
+Page: https://yangguanyi.github.io/papers/social-norms-information-green-fee/
+
+## What is this paper about?
+
+In a randomized survey of 559 college students voting on a hypothetical ‘green fee’, telling them that 85 percent of peers at other schools voted yes raised stated contributions by about $7–8 (roughly 25 percent), while telling them the dollar range of peer fees lowered contributions by about $8–9; given both pieces of information, the effects cancelled.
+
+## Abstract
+
+We conduct an experiment to investigate how different types of information about social norms affect individuals’ stated contributions to a specific pro-environment program, a student ‘green fee’, in the context of a referendum. Compared to students that receive no information about peer contributions, on average, students that receive information about the dollar value range of contributions at peer institutions contribute less while students that learn about the high percentage of students voting ‘yes’ on green fee programs at peer institutions contribute more. The results are economically significant as the absolute values of both effects represent approximately 25% of average contributions. These results suggest that information about participation rates can be more effective than information about dollar amounts in encouraging contributions to environmental initiatives. Of interest to stated preference researchers, we find that results do not change when controlling for self-selection into survey completion.
+
+## Key results
+
+- Control mean contribution $31.83 per semester. Dollar-range treatment: $23.33 (−$8.50, p = 0.005). Participation-rate treatment: $38.94 (+$7.10, p = 0.035). Combined treatment: $32.71, not different from control.
+- Interval regression estimates: −$8.09 for the dollar-range treatment and +$7.25 for the participation treatment.
+- Zero contributions fell from 15.6 percent of the control group to 7.1 percent in the participation-rate treatment.
+- Heckman and interval selection models using administrative data on all students (GPA, gender, race, region) leave the treatment effects essentially unchanged.
+- Men stated about $10.50 more than women; higher GPA raised contributions; income had no significant effect.
+
+## Limitations and scope (what the paper does not show)
+
+- One Midwestern liberal arts university, October 2011, about 30 percent response; stated rather than actual contributions in a hypothetical referendum.
+- The design cannot separate conformity from reciprocity motives.
+
+## Important context and definitions
+
+- ‘Extensive’ information is how many peers participate (85 percent voted yes at 70+ schools); ‘intensive’ information is how much they pay ($1 per credit to $80 per year). Only true information from AASHE was used.
+- The downward effect of dollar ranges is consistent with generous respondents revising down toward the perceived peer norm.
+
+## Data and methods
+
+Data: Online survey of 559 students at a Midwestern liberal arts university, October 2011; four randomized arms; payment card $0–$100 per semester; administrative data on the full student body for the selection model.
+Method: Randomized information treatments; t-tests, OLS and maximum-likelihood interval regressions; Heckman selection and Roodman’s cmp interval-selection models.
+Contribution: Separates the extensive and intensive margins of social-norm information in a referendum setting, and shows that self-selection into a student survey did not change the treatment effects.
+
+## Related work
+
+- Allcott, H. (2011). Social norms and energy conservation. Journal of Public Economics 95(9–10): 1082–1095. https://doi.org/10.1016/j.jpubeco.2011.03.003
+- Goldstein, N. J., R. B. Cialdini and V. Griskevicius (2008). A room with a viewpoint: using social norms to motivate environmental conservation in hotels. Journal of Consumer Research 35(3): 472–482. https://doi.org/10.1086/586910
+- Frey, B. S. and S. Meier (2004). Social comparisons and pro-social behavior: testing ‘conditional cooperation’ in a field experiment. American Economic Review 94(5): 1717–1722. https://doi.org/10.1257/0002828043052187
+- Shang, J. and R. Croson (2009). A field experiment in charitable contribution: the impact of social information on the voluntary provision of public goods. Economic Journal 119(540): 1422–1439. https://doi.org/10.1111/j.1468-0297.2009.02267.x
+- Alpizar, F., F. Carlsson and O. Johansson-Stenman (2008). Does context matter more for hypothetical than for actual contributions? Experimental Economics 11(3): 299–314. https://doi.org/10.1007/s10683-007-9194-9
+
+## Versions
+
+- Published article (Taylor & Francis): https://doi.org/10.1080/00036846.2015.1080803
+- RePEc listing: https://ideas.repec.org/f/pya376.html
+
+JEL: Q50, C90, H41, D03
+Keywords: social norms, stated preference, pro-environment behaviour, referendum
+
+## Cite
+
+Andrew Meyer, Guanyi Yang (2016). How Much Versus Who: Which Social Norms Information Is More Effective?. Applied Economics, Vol. 48, No. 5, pp. 389–401 (published online 11 September 2015). https://doi.org/10.1080/00036846.2015.1080803

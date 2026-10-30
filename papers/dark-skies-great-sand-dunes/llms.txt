@@ -1,0 +1,69 @@
+# Contingent Behavior Modeling for Dark Skies Valuation at Great Sand Dunes National Park
+
+> If the night sky at Great Sand Dunes National Park were as bright as an average suburb, visitors’ consumer surplus would fall by about 23–24 percent; at urban brightness it would fall 42–44 percent. Each unit increase in satellite-measured nightlight cuts visitation by about 0.05 days per visitor over five years.
+
+Authors: Mark Eiswerth (University of Northern Colorado; Colorado College); Liam Mullen (Colorado College); Guanyi Yang (Colorado College)
+Status: American Journal of Agricultural Economics, 2026, pp. 1–25 (accepted 28 April 2026). DOI 10.1002/ajae.70080
+Page: https://yangguanyi.github.io/papers/dark-skies-great-sand-dunes/
+
+## What is this paper about?
+
+If the night sky at Great Sand Dunes National Park were as bright as an average suburb, visitors’ consumer surplus would fall by about 23–24 percent; at urban brightness it would fall 42–44 percent. Each unit increase in satellite-measured nightlight cuts visitation by about 0.05 days per visitor over five years.
+
+## Abstract
+
+Dark sky conservation is increasingly popular, requiring facility upgrades and community cooperation. This study assesses its economic benefits at Great Sand Dunes National Park and Preserve, a Gold Tier International Dark Sky Park. Through on-site surveys, we collected data on visitor behaviors, expenditures, and night sky perceptions. We introduced a continuum of contingent night sky brightness levels based on visitors’ home locations and measured changes in visitation. Our Travel Cost-Contingent Behavior analysis shows that each unit increase in nightlight decreases visitation by 0.05 days over 5 years. Using a weighted Latent Class Negative Binomial (LCNB) model, we estimate consumer welfare losses under escalating nightlight pollution scenarios. If the park’s night skies matched an average rural, suburban, or urban area, visitors’ consumer surplus would fall by about 3%, 23–24%, and 42–44%, respectively. These results underscore the substantial economic value of preserving dark skies.
+
+## Key results
+
+- Each one-unit increase in VIIRS nightlight radiance at the park reduces a visitor’s visitation by 1.88 percent, about 0.05 days per person over five years (weighted fixed-effects negative binomial, coefficient −0.0186, significant at 1 percent).
+- 47 percent of surveyed visitors said they would take fewer trips or shorter trips if the park’s sky looked like the sky at home. Stated visitation days over the next five years fell from 2.68 (historical) to 1.60.
+- Consumer surplus per visitor-day: $323.95 (unweighted latent class model) to $1,226.29 (weighted). Visitors value a day at the park at several times their spending.
+- Annual consumer surplus loss per visitor: about 3 percent ($4–$18) if the park matched average rural brightness, 23–24 percent ($39–$159) at suburban brightness, 42–44 percent ($72–$291) at urban brightness.
+- Aggregate annual loss, assuming 500,000 visits: $2.2–9.1 million (rural), $19.5–79.3 million (suburban), $36.1–145.4 million (urban).
+- Radiance benchmarks: the park measured 0.28 nW/cm²/sr in October 2023; visitors’ rural home areas averaged 1.82, suburban 15.3, urban 32.1.
+
+## Limitations and scope (what the paper does not show)
+
+- On-site intercept sample only (330 visitor parties, October 20–22, 2023). Non-visitors are not surveyed, so the estimates are use values; existence and bequest values are not captured.
+- Travel cost excludes the opportunity cost of travel time, which lowers consumer surplus estimates.
+- Nightlight is VIIRS upward radiance, not perceived sky brightness; VIIRS is less sensitive to blue-rich LED light, so urban brightness may be understated.
+- Aggregate figures scale per-visitor losses by recent visitation (about 500,000 a year) and do not project visitation growth or future first-time visitors.
+
+## Important context and definitions
+
+- The contingent scenario is personal: each respondent compares the park’s sky with the sky at their own home, and the pooled responses form a continuous gradient of brightness. This is the paper’s main methodological contribution; earlier contingent behavior studies used one or a few discrete scenarios presented identically to everyone.
+- Gold Tier International Dark Sky Park status (DarkSky International, 2019) is a qualitative designation, not a radiance threshold.
+- The weighted model (Shi and Huang 2018 inverse visit-day weights) corrects on-site oversampling of frequent visitors; it raises per-day consumer surplus because infrequent visitors value each day more.
+
+## Data and methods
+
+Data: On-site intercept survey of 367 visitor parties at Great Sand Dunes National Park and Preserve, Colorado, October 20–22, 2023 (330 used). VIIRS Day/Night Band cloud-free nightlight radiance (NOAA Earth Observation Group) matched to respondents’ home ZIP codes.
+Method: Travel cost model combined with the contingent behavior method; negative binomial count models with individual fixed effects (panel of actual and contingent states), latent class negative binomial following Hynes and Greene (2013, 2016), and inverse visit-day weighting for endogenous stratification following Shi and Huang (2018).
+Contribution: First contingent behavior study to use a continuum of respondent-specific contingent scenarios for a continuous environmental attribute, and the first to combine inverse visit-day weighting with a latent class structure in this setting. The method transfers to water quality, wildfire risk and noise.
+
+## Related work
+
+- Hynes, S. and W. Greene (2013). A panel travel cost model accounting for endogenous stratification and truncation: a latent class approach. Land Economics 89(1): 177–192. https://doi.org/10.3368/le.89.1.177
+- Hynes, S. and W. Greene (2016). Preference heterogeneity in contingent behaviour travel cost models with on-site samples. Journal of Agricultural Economics 67(2): 348–367. https://doi.org/10.1111/1477-9552.12143
+- Shi, W. and J. Huang (2018). Correcting on-site sampling bias: a new method with application to recreation demand analysis. Land Economics 94(3): 459–474. https://doi.org/10.3368/le.94.3.459
+- Egan, K. and J. Herriges (2006). Multivariate count data regression models with individual panel data from an on-site sample. Journal of Environmental Economics and Management 52(2): 567–581. https://doi.org/10.1016/j.jeem.2006.03.002
+- Heberling, M. T. and J. J. Templeton (2009). Estimating the economic value of national parks with count data models using on-site, secondary data: the case of the Great Sand Dunes National Park and Preserve. Environmental Management 43: 619–627. https://doi.org/10.1007/s00267-008-9149-8
+- Mitchell, D. and T. Gallaway (2019). Dark sky tourism: economic impacts on the Colorado Plateau economy, USA. Tourism Review 74(4): 930–942. https://doi.org/10.1108/tr-10-2018-0146
+- Simpson, S. N. and B. G. Hanna (2010). Willingness to pay for a clear night sky: use of the contingent valuation method. Applied Economics Letters 17(11): 1095–1103. https://doi.org/10.1080/00036840902817508
+- Argys, L. M., S. L. Averett and M. Yang (2021). Light pollution, sleep deprivation, and infant health at birth. Southern Economic Journal 87(3): 849–888. https://doi.org/10.1002/soej.12477
+
+## Versions
+
+- Published article (Wiley): https://doi.org/10.1002/ajae.70080
+- Working paper version (PDF): https://yangguanyi.github.io/pdf/Eiswerth-Mullen-Yang-2026-Dark-Skies-Valuation-Great-Sand-Dunes-WP.pdf
+- Policy brief: Tourism Response to Dark Sky Conservation at the Great Sand Dunes (State of the Rockies, Nov 2024): https://doi.org/10.52295/dcc.7959
+- Press: CC and UNC Team Research Dark Sky Tourism (The Peak, Jan 2024): https://thepeak.coloradocollege.edu/2024/01/09/cc-and-unc-team-research-dark-sky-tourism/
+- Essay: The Economics of the Night Sky (State of the Rockies, 2024): https://www.coloradocollege.edu/other/stateoftherockies/_documents/2024-anthropogenic-article-pdfs/The%20Economics%20of%20the%20Night%20Sky%202024.pdf
+
+JEL: Q26, Q51, Q56
+Keywords: contingent behavior model, dark sky conservation, ecotourism, latent class, national park, negative binomial, nightlight pollution, survey methods, tourism, travel cost model, willingness-to-pay
+
+## Cite
+
+Mark Eiswerth, Liam Mullen, Guanyi Yang (2026). Contingent Behavior Modeling for Dark Skies Valuation at Great Sand Dunes National Park. American Journal of Agricultural Economics, 2026, pp. 1–25 (accepted 28 April 2026). https://doi.org/10.1002/ajae.70080

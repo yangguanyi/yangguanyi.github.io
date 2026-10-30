@@ -1,0 +1,62 @@
+# Unemployment Dynamics and Informality in Small Open Economies
+
+> Emerging market economies have less volatile and less countercyclical unemployment than small open advanced economies, despite larger output swings, and a two-sector search model shows that a bigger informal sector explains much of the difference: informal jobs absorb adjustment that would otherwise run through unemployment.
+
+Authors: Jaroslav Horvath (University of New Hampshire); Guanyi Yang (Colorado College)
+Status: European Economic Review, Vol. 141, 103949. DOI 10.1016/j.euroecorev.2021.103949
+Page: https://yangguanyi.github.io/papers/informality-unemployment-small-open-economies/
+
+## What is this paper about?
+
+Emerging market economies have less volatile and less countercyclical unemployment than small open advanced economies, despite larger output swings, and a two-sector search model shows that a bigger informal sector explains much of the difference: informal jobs absorb adjustment that would otherwise run through unemployment.
+
+## Abstract
+
+Despite the typically more pronounced aggregate fluctuations in emerging market economies (EMEs), this paper documents that EMEs exhibit lower relative volatility and countercyclicality of the unemployment rate than small open advanced economies. We link these differences to the larger informal economy in EMEs. We build a small open economy model that combines a formal sector featuring labor search frictions with a frictionless informal sector. A larger informal sector amplifies the impact of productivity and interest rate shocks on formal output, consumption, and employment, while dampening their impact on unemployment. Varying the degree of informality explains a significant fraction of differences in unemployment dynamics across small open economies.
+
+## Key results
+
+- Relative volatility of unemployment to output: 4.63 (mean) in 14 emerging economies vs 7.74 in 14 small open advanced economies (p = 0.000); correlation with output −0.47 vs −0.62 (p = 0.047). IMF data, 1980Q1–2018Q2, HP-filtered.
+- Informality averages 30.8 percent of GDP in the emerging group vs 16.4 percent in the advanced group (Schneider et al. 2010); across countries, both relative unemployment volatility and countercyclicality fall as informality rises (p = 0.008 and 0.007).
+- Calibrated to Mexico, the model reproduces relative unemployment volatility of 3.95 (data 3.89) and a correlation of −0.49 (data −0.35), along with consumption more volatile than output and a countercyclical trade balance.
+- Varying the informal employment share from 0.1 to 0.5 moves relative unemployment volatility from 5.82 to 2.78 and the correlation from −0.68 to −0.23, tracing the cross-country pattern.
+- Mismeasurement matters too: counting about half of informal output in national accounts lowers measured output volatility and raises measured unemployment volatility, moving moments toward advanced-economy values.
+
+## Limitations and scope (what the paper does not show)
+
+- Cross-country facts cover 14 advanced and 14 emerging small open economies with sufficiently long quarterly data.
+- The model is calibrated to Mexico and abstracts from the out-of-labor-force margin; informal production is modeled as firms facing audit risk, not self-employment.
+- Sector-specific productivity shocks are assumed symmetric and uncorrelated, a conservative choice given the lack of data on informal productivity.
+
+## Important context and definitions
+
+- Informality in the model is the informal share of total employment (0.3 for Mexico); the cross-country figures use the Schneider et al. (2010) share of GDP. The two are different measures.
+- Informal workers search on the job for formal jobs, which is what gives the informal sector its buffering role.
+
+## Data and methods
+
+Data: IMF International Financial Statistics, quarterly output and unemployment for 28 small open economies, 1980Q1–2018Q2; Schneider, Buehn and Montenegro (2010) informality estimates; Mexican labor-market flows (ENEU/ENOE) via Leyva and Urrutia (2020); EMBI spreads.
+Method: Small open economy real business cycle model with a formal sector subject to search-and-matching frictions and Nash bargaining, a frictionless informal sector with audit probability and fines, CES aggregation of formal and informal consumption, debt-elastic interest rate; log-linearized and calibrated to Mexico; shocks to formal and informal productivity and to the country interest rate.
+Contribution: A new cross-country fact about unemployment in emerging markets and a mechanism, the size and mismeasurement of the informal sector, that explains it within a standard search framework.
+
+## Related work
+
+- Fernández, A. and F. Meza (2015). Informal employment and business cycles in emerging economies: the case of Mexico. Review of Economic Dynamics 18(2): 381–405. https://doi.org/10.1016/j.red.2014.07.001
+- Leyva, G. and C. Urrutia (2020). Informality, labor regulation, and the business cycle. Journal of International Economics 126: 103340. https://doi.org/10.1016/j.jinteco.2020.103340
+- Restrepo-Echavarria, P. (2014). Macroeconomic volatility: the role of the informal economy. European Economic Review 70: 454–469. https://doi.org/10.1016/j.euroecorev.2014.06.012
+- Finkelstein Shapiro, A. (2018). Labor force participation, interest rate shocks, and unemployment dynamics in emerging economies. Journal of Development Economics 133: 346–374. https://doi.org/10.1016/j.jdeveco.2018.03.003
+- Boz, E., C. B. Durdu and N. Li (2015). Emerging market business cycles: the role of labor market frictions. Journal of Money, Credit and Banking 47(1): 31–72. https://doi.org/10.1111/jmcb.12168
+- Neumeyer, P. A. and F. Perri (2005). Business cycles in emerging economies: the role of interest rates. Journal of Monetary Economics 52(2): 345–380. https://doi.org/10.1016/j.jmoneco.2004.04.011
+- Aguiar, M. and G. Gopinath (2007). Emerging market business cycles: the cycle is the trend. Journal of Political Economy 115(1): 69–102. https://doi.org/10.1086/511283
+
+## Versions
+
+- Published article (Elsevier): https://doi.org/10.1016/j.euroecorev.2021.103949
+- RePEc listing: https://ideas.repec.org/f/pya376.html
+
+JEL: E26, F44, J64
+Keywords: informal economy, labor market frictions, emerging markets, business cycles
+
+## Cite
+
+Jaroslav Horvath, Guanyi Yang (2022). Unemployment Dynamics and Informality in Small Open Economies. European Economic Review, Vol. 141, 103949. https://doi.org/10.1016/j.euroecorev.2021.103949
