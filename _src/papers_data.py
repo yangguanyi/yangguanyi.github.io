@@ -73,56 +73,6 @@ dict(
  funding="State of the Rockies Project and Hulbert Center for Southwest Studies at Colorado College; University of Northern Colorado Department of Economics Foundation Fund. NPS permit GRSA-2023-SCI-0006.",
 ),
 # ---------------------------------------------------------------- 2
-dict(
- slug="light-pollution-infant-health",
- kind="working paper", theme="night-sky",
- title="Artificial Light Exposure During Pregnancy and Infant Health",
- authors=[("Andrés Azqueta-Gavaldón","Banco de España"),("Ella Reese-Clauson","Colorado College"),("Guanyi Yang","Colorado College")],
- year=2026, venue="Working paper", venue_detail="Preliminary draft, March 4, 2026",
- doi=None,
- jel=["I10","Q53","J13","I14"],
- keywords=["artificial light at night","light pollution","infant health","prenatal environmental exposure","birth outcomes","environmental inequality"],
- synonyms="Also searched as ALAN and pregnancy, nighttime light and birth weight, satellite night lights and health, and light pollution and NICU admissions.",
- one_liner="Using the universe of U.S. births from 2014 to 2018 linked to satellite nighttime radiance, a 10 percent increase in average light exposure during pregnancy reduces birth weight by roughly 0.4 to 2 percent (13 to 65 grams) and raises the probability of NICU admission by about 1 to 3 percentage points, with the largest effects in urban, high-air-pollution areas and among infants born to non-Hispanic Black mothers.",
- abstract="Artificial light at night (ALAN) is a pervasive feature of modern environments, yet its effects on fetal development remain poorly understood. Using U.S. birth records linked to satellite-based measures of gestational nighttime radiance, we estimate the impact of prenatal light exposure on infant health. A 10 percent increase in average gestational radiance reduces birth weight by roughly 0.4 to 2 percent (13 to 65 grams at the mean) and increases neonatal intensive care unit admission by about 1 to 3 percentage points. Effects are largest in urban and high air-pollution areas and among infants born to non-Hispanic Black mothers. We estimate these effects using flexible machine-learning methods and complement them with an instrumental-variables strategy that exploits quasi-random variation in the satellite retrieval process to assess attenuation from measurement error.",
- findings=[
-  "Sample: 12,027,573 live births, National Vital Statistics System, January 2014–December 2018, linked to county-month VIIRS Black Marble radiance averaged over gestational months.",
-  "Birth weight: a 10 percent increase in gestational radiance lowers birth weight by 0.84 percent (OLS), about 2.1 percent or roughly 70 grams (double machine learning), and about 4.5 percent (instrumental variables).",
-  "NICU admission: +0.25 percentage points (OLS), +3.4 percentage points on a 7.4 percent base (double machine learning); the IV estimate is roughly four times the DML estimate.",
-  "Urban counties −2.4 percent birth weight vs rural −0.9 percent; worst air-quality quartile −2.3 percent vs best quartile −1.5 percent, with a monotonic gradient.",
-  "By maternal race and ethnicity: non-Hispanic Black −3.25 percent, non-Hispanic White −2.14 percent, Hispanic −1.04 percent, Asian −1.17 percent.",
-  "The estimates follow a consistent ordering, |OLS| < |DML| < |IV|, which the authors read as evidence that linear models understate the effect.",
- ],
- limits=[
-  "Exposure is county-month outdoor radiance from satellites, not indoor light reaching the mother; residence is measured at delivery. Both forms of error are expected to bias estimates toward zero.",
-  "The double machine learning estimates rest on selection on observables; the IV estimates identify a local average treatment effect driven by satellite observation quality.",
-  "No biological mechanism (sleep, circadian disruption) is identified.",
-  "Preliminary draft; results may change.",
- ],
- context=[
-  "“Artificial light at night (ALAN)” is the term used in the health literature; the exposure measure is the VIIRS Black Marble monthly stray-light-corrected composite (VCMSLCFG), in nW/cm²/sr.",
-  "The instrument is an index of satellite retrieval quality (Black Marble Mandatory Quality Flags), used as a shifter of measurement error, not of true illumination. This differs from Argys, Averett and Yang (2021), who instrument skyglow with Walker’s law.",
- ],
- data="Restricted-use NVSS natality microdata, all U.S. births 2014–2018 (12.03 million); NASA Black Marble VIIRS monthly radiance and daily quality flags; EPA Air Quality Index; county unemployment, population and income.",
- method="OLS with state and year-month fixed effects; double/debiased machine learning (Chernozhukov et al. 2018) with random forests, gradient boosting and lasso, five-fold cross-fitting; instrumental variables using satellite observation quality; standard errors clustered by county × year-month.",
- whats_new="Population-scale evidence that prenatal exposure to artificial light at night worsens birth outcomes, with a measurement-error correction built from the satellite retrieval process itself.",
- audiences=["Health economists working on fetal origins and early-life environment","Environmental epidemiologists and public-health researchers","Researchers using satellite nighttime lights and remote sensing","Applied econometricians interested in double machine learning with instrumental variables","Environmental-justice and racial-disparity researchers","Dark-sky and lighting policy advocates"],
- related=[
-  ("Argys, L. M., S. L. Averett and M. Yang (2021). Light pollution, sleep deprivation, and infant health at birth. Southern Economic Journal 87(3): 849–888.", None),
-  ("Currie, J. and R. Walker (2011). Traffic congestion and infant health: evidence from E-ZPass. American Economic Journal: Applied Economics 3(1): 65–90.", None),
-  ("Chernozhukov, V., D. Chetverikov, M. Demirer, E. Duflo, C. Hansen, W. Newey and J. Robins (2018). Double/debiased machine learning for treatment and structural parameters. Econometrics Journal 21(1): C1–C68.", None),
-  ("Román, M. O. et al. (2018). NASA’s Black Marble nighttime lights product suite. Remote Sensing of Environment 210: 113–143.", None),
-  ("Henderson, J. V., A. Storeygard and D. N. Weil (2012). Measuring economic growth from outer space. American Economic Review 102(2): 994–1028.", None),
- ],
- versions=[
-  ("Preliminary draft, March 4, 2026 (PDF)","https://github.com/yangguanyi/Working-papers/raw/master/Light_Pollution_Infant_Health.pdf"),
- ],
- questions=[
-  ("Does light pollution affect pregnancy and birth outcomes?","In this study, yes. Higher average nighttime radiance over the months of pregnancy is associated with lower birth weight, shorter gestation, more preterm and low-birth-weight births, and more NICU admissions, across OLS, machine-learning and instrumental-variables estimates."),
-  ("Who is most affected?","Effects are about two and a half times larger in urban than rural counties, larger where air quality is worse, and largest for infants born to non-Hispanic Black mothers, even after conditioning on maternal, economic and environmental characteristics."),
- ],
- funding="State of the Rockies Project and Hulbert Center for Southwest Studies, Colorado College.",
-),
 # ---------------------------------------------------------------- 3
 dict(
  slug="racial-disparities-hiring-discrimination",
@@ -373,7 +323,6 @@ dict(
  context=[
   "Global financial risk is proxied by the VIX in the published version and by the U.S. Baa spread in robustness checks; the 2022 working paper version reversed those roles.",
   "Country spreads are J.P. Morgan EMBIG; corporate spreads are the EFI of Caballero, Fernández and Park (2019) and J.P. Morgan’s CEMBI.",
-  "A 2021 note by the same authors, “Equity Returns, Bond Spreads, and Economic Activity in Emerging Countries”, reports the forecasting regressions that motivated Section VI.",
  ],
  data="IMF International Financial Statistics (output, investment, trade balance); J.P. Morgan EMBIG spreads via World Bank GEM; Global Financial Data stock indexes; U.S. Treasury TIC capital flows; VIX and Baa spread from FRED. Quarterly, 1999Q1–2019Q4.",
  method="Panel structural VAR (least-squares dummy variable estimation, one lag, recursive identification) with output, investment, trade balance, global financial risk, capital flows, country spread and equity returns; impulse responses, variance decompositions and counterfactuals that mute specific transmission channels.",
@@ -391,8 +340,6 @@ dict(
  versions=[
   ("Published article (Wiley)","https://doi.org/10.1111/obes.12595"),
   ("Working paper version, December 2023 (PDF)","https://github.com/yangguanyi/Working-papers/raw/master/GFR_and_equity_returns.pdf"),
-  ("Working paper version, March 2022 (PDF)","https://github.com/yangguanyi/Working-papers/raw/master/GFR_capital_flows_and_EME.pdf"),
-  ("Companion note, April 2021: Equity Returns, Bond Spreads, and Economic Activity in Emerging Countries (PDF)","https://github.com/yangguanyi/Working-papers/raw/master/Caballero_comment.pdf"),
   ("RePEc listing","https://ideas.repec.org/f/pya376.html"),
  ],
  questions=[
@@ -637,67 +584,15 @@ dict(
  funding=None,
 ),
 # ---------------------------------------------------------------- 13 policy brief
-dict(
- slug="dark-skies-policy-brief",
- kind="report", theme="night-sky",
- title="Tourism Response to Dark Sky Conservation at the Great Sand Dunes National Park and Preserve",
- authors=[("Mark Eiswerth","University of Northern Colorado"),("Guanyi Yang","Colorado College"),("Liam Mullen","Colorado College")],
- year=2024, venue="State of the Rockies Project, Colorado College", venue_detail="Policy briefing, November 15, 2024",
- doi="10.52295/dcc.7959",
- jel=[],
- keywords=["dark sky tourism","light pollution","Great Sand Dunes","Colorado","visitor spending","consumer surplus","policy brief"],
- synonyms="Also searched as the economic impact of dark skies in Colorado, Alamosa tourism and the Sand Dunes, and the value of a Dark Sky Park to the local economy.",
- one_liner="Visitors to Great Sand Dunes spend about $80 a day locally and value a day at the park at $324 to $1,226, four to fifteen times their spending; if the park’s sky became as bright as nearby Alamosa, local spending would fall by an estimated $176,000–$191,000 a year and visitors’ net benefits by $0.7–2.9 million a year.",
- abstract="This non-technical report presents the findings of an on-site visitor survey at Great Sand Dunes National Park and Preserve, a Gold Tier International Dark Sky Park, conducted October 20–22, 2023. It estimates visitors’ daily spending, the recreation value of a day at the park, and the losses in local tourism revenue and visitor benefits that would follow from increases in night light pollution to the levels of nearby towns and Colorado cities. The scientific analysis is reported in the companion article “Contingent Behavior Modeling for Dark Skies Valuation at Great Sand Dunes National Park”.",
- abstract_is_summary=True,
- findings=[
-  "367 visitor parties surveyed; visitors averaged 1.91 trips and 2.68 visitation days per person over the previous five years; 47 percent would reduce trips or days if the park’s sky looked like home.",
-  "Average spending: $83.20 per trip-day overall and $80.44 per day locally (mostly Alamosa County). Net consumer benefit per day: $324–$1,226.",
-  "If the park’s night light rose from 0.28 to Alamosa’s 0.76: 0.02 fewer days per visitor over five years, $176,000–$191,000 less local spending a year, about $190,000–$210,000 less regional output (multiplier 1.10), and $708,000–$2.9 million less in visitor benefits a year.",
-  "At Breckenridge-level light (1.03): $272,000–$295,000 less local spending, $299,000–$325,000 less regional output, $1.1–4.5 million less in visitor benefits a year.",
-  "At Denver-level light (66.9): 1.8–1.9 fewer days per visitor over five years and $59–232 million a year in lost visitor benefits.",
- ],
- limits=[
-  "Visitors only; no non-visitors or potential future visitors; baseline visitation held at 500,000 a year; direct spending only, with a regional multiplier applied from NPS estimates.",
- ],
- context=[
-  "Written for park managers, local officials and the public; methods and updated results are in the AJAE article.",
-  "The 2022 NPS visitor-spending report puts Great Sand Dunes visitor spending at $32.5 million and local economic output at $36.0 million, which implies the 1.10 multiplier used here.",
- ],
- data="Same survey as the AJAE article; NPS 2022 visitor spending effects (Flyr and Koontz 2023); VIIRS 2022 nightlights for comparison towns.",
- method="Travel cost and contingent behavior models (latent class negative binomial, weighted and unweighted) applied to per-visitor spending and consumer surplus; scaled by annual visitation and a local multiplier.",
- whats_new="Puts dollar figures on local tourism revenue and visitor welfare at risk from light pollution at a specific park, for a non-technical audience.",
- audiences=["National Park Service and Great Sand Dunes staff","Alamosa and Saguache county officials and tourism boards","Colorado legislators and dark-sky advocates","Journalists"],
- related=[
-  ("Eiswerth, M., L. Mullen and G. Yang (2026). Contingent behavior modeling for dark skies valuation at Great Sand Dunes National Park. American Journal of Agricultural Economics.","10.1002/ajae.70080"),
-  ("Flyr, M. and L. Koontz (2023). 2022 National Park Visitor Spending Effects. NPS Natural Resource Report NPS/NRSS/EQD/NRR—2023/2551.","10.36967/2299764"),
- ],
- versions=[
-  ("Report in Colorado College’s DigitalCC repository (DOI)","https://doi.org/10.52295/dcc.7959"),
-  ("Report PDF","https://github.com/yangguanyi/Working-papers/raw/master/Sand_Dunes_Dark_Sky_Yang_Eiswerth_Mullen_Nov_24.pdf"),
- ],
- questions=[
-  ("How much money do dark skies bring to the Great Sand Dunes area?","Visitors spend about $80 a day locally. Even a small increase in light pollution, to the level of nearby Alamosa, is estimated to cost the local area $176,000–$191,000 a year in direct spending, and visitors $0.7–2.9 million a year in lost recreation value."),
- ],
- funding="State of the Rockies Project and Hulbert Center for Southwest Studies, Colorado College; UNC Department of Economics Foundation Fund.",
-),
 ]
 
 # Papers without public drafts: title and status only (no abstracts available to the site builder; do not invent).
-IN_PROGRESS = [
- dict(title="Welfare Implications of Intra-Household Time Allocation", coauthors="Konstantin Platonov and Michael Carter", status="Working paper", theme="college-lifecycle",
-      note="Also presented as “Not Lazy, Just Busy: Time Inequality and Household Dynamics”."),
- dict(title="Race, Portfolios, and Monetary Policy in a Heterogeneous-Agent New Keynesian Model", coauthors="EJ Ume", status="Working paper", theme="race-macro",
-      note="Also presented as “Same Stimulus, Opposite Incidence: Monetary Policy, Fiscal Transfers, and Race in HANK”."),
- dict(title="The Distribution of Discrimination: Firm Dynamics and Racial Labor Market Gaps over the Business Cycle", coauthors="Srinivasan Murali", status="Working paper", theme="race-macro", note=None),
- dict(title="Absorbing a College Supply Shock: Where Did the Adjustment Go?", coauthors="Xuan Jiang", status="Working paper", theme="china-education", note=None),
- dict(title="Fighting Poverty from the Root: A Model of Endogenous Skill Risk Premium", coauthors="Li Rong", status="Research in progress", theme="college-lifecycle", note=None),
-]
+IN_PROGRESS = []
 
 THEMES = {
  "night-sky": dict(
    title="Economics of the night sky",
-   blurb="Light pollution is a continuous, nearly universal environmental change that economics has only begun to price. This line of work measures what dark skies are worth to the people who travel to see them and what artificial light at night costs the people who live under it. The dark-sky work is run through the State of the Rockies Dark Sky Lab at Colorado College with undergraduate researchers.",
+   blurb="Light pollution is a continuous, nearly universal environmental change that economics has only begun to price. This line of work measures what dark skies are worth to the people who travel to see them. It is run through the State of the Rockies Dark Sky Lab at Colorado College with undergraduate researchers.",
  ),
  "college-lifecycle": dict(
    title="College access, human capital and life-cycle risk",

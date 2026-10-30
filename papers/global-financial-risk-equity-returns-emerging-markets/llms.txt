@@ -32,7 +32,6 @@ International financial integration exposes countries to external shocks. This p
 
 - Global financial risk is proxied by the VIX in the published version and by the U.S. Baa spread in robustness checks; the 2022 working paper version reversed those roles.
 - Country spreads are J.P. Morgan EMBIG; corporate spreads are the EFI of Caballero, Fernández and Park (2019) and J.P. Morgan’s CEMBI.
-- A 2021 note by the same authors, “Equity Returns, Bond Spreads, and Economic Activity in Emerging Countries”, reports the forecasting regressions that motivated Section VI.
 
 ## Data and methods
 
@@ -54,8 +53,6 @@ Contribution: Evidence that the international equity channel, not bond spreads, 
 
 - Published article (Wiley): https://doi.org/10.1111/obes.12595
 - Working paper version, December 2023 (PDF): https://yangguanyi.github.io/pdf/Horvath-Yang-2023-Global-Financial-Risk-Equity-Returns-Emerging-Countries-WP.pdf
-- Working paper version, March 2022 (PDF): https://yangguanyi.github.io/pdf/Horvath-Yang-2022-Global-Financial-Risk-Equity-Returns-Emerging-Countries-WP-March-2022.pdf
-- Companion note, April 2021: Equity Returns, Bond Spreads, and Economic Activity in Emerging Countries (PDF): https://yangguanyi.github.io/pdf/Horvath-Yang-2021-Equity-Returns-Bond-Spreads-Emerging-Countries-Note.pdf
 - RePEc listing: https://ideas.repec.org/f/pya376.html
 
 JEL: E32, E37, F34, F37, G15

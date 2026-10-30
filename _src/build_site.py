@@ -22,16 +22,12 @@ EMAIL = "gyang@ColoradoCollege.edu"
 # Local PDF copies (descriptive names) -> source file in the Working-papers clone
 PDF_MAP = {
  "https://github.com/yangguanyi/Working-papers/raw/master/Search_and_match_and_racial_inequity.pdf": "Murali-Yang-2025-Macroeconomics-of-Racial-Disparities.pdf",
- "https://github.com/yangguanyi/Working-papers/raw/master/Light_Pollution_Infant_Health.pdf": "Azqueta-Gavaldon-Reese-Clauson-Yang-2026-Artificial-Light-Pregnancy-Infant-Health.pdf",
  "https://github.com/yangguanyi/Working-papers/raw/master/College_timing_endowment.pdf": "Yang-2025-Better-Late-Than-Never-Intermittent-College-Enrollment-WP.pdf",
  "https://github.com/yangguanyi/Working-papers/raw/master/Contingent_Behavior_Modeling_for_Dark_Skies_Valuation_at_Great_Sand_Dunes_National_Park.pdf": "Eiswerth-Mullen-Yang-2026-Dark-Skies-Valuation-Great-Sand-Dunes-WP.pdf",
  "https://github.com/yangguanyi/Working-papers/raw/master/GFR_and_equity_returns.pdf": "Horvath-Yang-2023-Global-Financial-Risk-Equity-Returns-Emerging-Countries-WP.pdf",
- "https://github.com/yangguanyi/Working-papers/raw/master/GFR_capital_flows_and_EME.pdf": "Horvath-Yang-2022-Global-Financial-Risk-Equity-Returns-Emerging-Countries-WP-March-2022.pdf",
- "https://github.com/yangguanyi/Working-papers/raw/master/Caballero_comment.pdf": "Horvath-Yang-2021-Equity-Returns-Bond-Spreads-Emerging-Countries-Note.pdf",
- "https://github.com/yangguanyi/Working-papers/raw/master/Sand_Dunes_Dark_Sky_Yang_Eiswerth_Mullen_Nov_24.pdf": "Eiswerth-Yang-Mullen-2024-Tourism-Response-Dark-Sky-Conservation-Great-Sand-Dunes-Policy-Brief.pdf",
  "https://github.com/yangguanyi/Working-papers/raw/master/sib_spillover_China.pdf": "Bansak-Jiang-Yang-2022-Sibling-Spillovers-Rural-China-WP.pdf",
 }
-WP_SRC = pathlib.Path("/home/claude/working-papers")
+WP_SRC = pathlib.Path("/tmp/claude-0/-home-claude/87876bce-ade7-545d-96d6-27fe0d1359a3/scratchpad/repos/Working-papers")
 
 def e(s): return html.escape(s, quote=True)
 def local_pdf(url):
@@ -175,10 +171,8 @@ def research_page():
          "<h2>Themes</h2><ul>" + "".join(f"<li><a href='{BASE}/themes/{k}/'>{e(v['title'])}</a> · {sum(1 for p in pd.PAPERS if p['theme']==k)} papers</li>" for k,v in pd.THEMES.items()) + "</ul>",
          "<h2>Publications</h2><ul class='paperlist'>" + "".join(paper_li(p) for p in arts) + "</ul>",
          "<h2>Working papers</h2><ul class='paperlist'>" + "".join(paper_li(p) for p in wps) + "</ul>",
-         "<h3>Papers in progress (no public draft yet)</h3><ul>" + "".join(f"<li>{e(w['title'])} (with {e(w['coauthors'])}). {e(w['status'])}." + (f" <span class='meta'>{e(w['note'])}</span>" if w.get('note') else "") + "</li>" for w in pd.IN_PROGRESS) + "</ul>",
-         "<h2>Reports</h2><ul class='paperlist'>" + "".join(paper_li(p) for p in reps) + "</ul>",
-         "<h2>Other</h2><ul><li>Yang, G. (2012). A Look at Ohio’s Foreign-Born Population. <i>Economic Trends</i>, Federal Reserve Bank of Cleveland, August 6, 2012. <a href='https://fraser.stlouisfed.org/title/economic-trends-federal-reserve-bank-cleveland-3952/economic-trends-august-2012-493107?page=25'>FRASER</a></li>"
-         "<li>Yang, G. (2018). Endogenous Skills and Labor Income Inequality. MPRA Paper 89638. <a href='https://ideas.repec.org/p/pra/mprapa/89638.html'>RePEc</a></li></ul>",
+         ("<h2>Reports</h2><ul class='paperlist'>" + "".join(paper_li(p) for p in reps) + "</ul>") if reps else "",
+         "<h2>Other</h2><ul><li>Yang, G. (2012). A Look at Ohio’s Foreign-Born Population. <i>Economic Trends</i>, Federal Reserve Bank of Cleveland, August 6, 2012. <a href='https://fraser.stlouisfed.org/title/economic-trends-federal-reserve-bank-cleveland-3952/economic-trends-august-2012-493107?page=25'>FRASER</a></li></ul>",
          f"<p class='meta'>Profiles: <a href='{SCHOLAR}'>Google Scholar</a> · <a href='{REPEC}'>RePEc/IDEAS</a> · <a href='https://www.researchgate.net/profile/Guanyi_Yang'>ResearchGate</a></p>"]
     return "research/", page("Research — Guanyi Yang", "\n".join(b), "Publications and working papers by Guanyi Yang, economist at Colorado College: dark skies and light pollution, college access and life-cycle risk, racial disparities, emerging-market business cycles, children and schooling in rural China.", "research/")
 
@@ -191,15 +185,15 @@ def theme_page(k, v):
 
 def home_page():
     picks = {p["slug"]:p for p in pd.PAPERS}
-    sel = ["dark-skies-great-sand-dunes","intermittent-college-enrollment","racial-disparities-hiring-discrimination","informality-unemployment-small-open-economies","light-pollution-infant-health","sibling-spillovers-rural-china"]
+    sel = ["dark-skies-great-sand-dunes","intermittent-college-enrollment","racial-disparities-hiring-discrimination","informality-unemployment-small-open-economies","sibling-spillovers-rural-china","global-financial-risk-equity-returns-emerging-markets"]
     ld = {"@context":"https://schema.org","@type":"Person","name":NAME,"givenName":"Guanyi","familyName":"Yang",
           "jobTitle":"Gerald L. Schlessman Assistant Professor of Economics and Business","worksFor":{"@type":"CollegeOrUniversity","name":"Colorado College","address":"14 E. Cache la Poudre St., Colorado Springs, CO 80903"},
           "alumniOf":[{"@type":"CollegeOrUniversity","name":"The Ohio State University"},{"@type":"CollegeOrUniversity","name":"Ohio Wesleyan University"}],
           "email":f"mailto:{EMAIL}","url":BASE+"/","sameAs":[SCHOLAR,REPEC,GITHUB,GLO,"https://www.researchgate.net/profile/Guanyi_Yang","https://sites.google.com/site/guanyiyangeconomics"],
-          "knowsAbout":["macroeconomics","labor economics","heterogeneous-agent models","economics of education","environmental valuation","light pollution","dark sky tourism","racial inequality","emerging market business cycles","informal economy","rural China"]}
+          "knowsAbout":["macroeconomics","labor economics","heterogeneous-agent models","economics of education","environmental valuation","dark sky tourism","racial inequality","emerging market business cycles","informal economy","rural China"]}
     b = ["<h1>Guanyi Yang</h1>",
          "<p class='meta'>Gerald L. Schlessman Assistant Professor of Economics and Business, Colorado College · Research Fellow, Global Labor Organization · Project Director, State of the Rockies · Ph.D. Economics, The Ohio State University (2018)</p>",
-         "<p>I am an economist. I build heterogeneous-agent macroeconomic models to study labor markets, human capital and inequality, and I use surveys and microeconometric methods to value environmental goods and study education in China. Current projects measure what dark skies are worth and what artificial light at night costs, how flexible access to college changes lifetime welfare, how hiring discrimination shapes racial gaps in jobs and wealth, and why emerging economies’ business cycles behave differently.</p>",
+         "<p>I am an economist. I build heterogeneous-agent macroeconomic models to study labor markets, human capital and inequality, and I use surveys and microeconometric methods to value environmental goods and study education in China. Current projects measure what dark skies are worth, how flexible access to college changes lifetime welfare, how hiring discrimination shapes racial gaps in jobs and wealth, and why emerging economies’ business cycles behave differently.</p>",
          "<h2>Selected findings</h2><ul>" + "".join(f"<li><a href='{BASE}/papers/{s}/'>{e(picks[s]['title'])}</a> ({picks[s]['year']}). {e(picks[s]['one_liner'])}</li>" for s in sel) + "</ul>",
          f"<p><a href='{BASE}/research/'>All papers, by theme and by status →</a></p>",
          "<h2>Research themes</h2><ul>" + "".join(f"<li><a href='{BASE}/themes/{k}/'>{e(v['title'])}</a></li>" for k,v in pd.THEMES.items()) + "</ul>",
