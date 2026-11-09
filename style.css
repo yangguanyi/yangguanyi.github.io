@@ -9,6 +9,7 @@ a{color:var(--navy);text-decoration-thickness:1px;text-underline-offset:.22em}a:
 .site-header{border-bottom:1px solid var(--line)}
 .header-inner{min-height:94px;display:flex;align-items:center;justify-content:space-between;gap:28px}
 .brand{font:600 1.35rem/1.2 var(--serif);letter-spacing:-.035em;text-decoration:none;color:var(--ink)}
+.brand-note{display:block;margin-top:6px;font:500 .62rem/1.2 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
 .primary-nav{display:flex;align-items:center;gap:30px;font-size:.875rem}
 .primary-nav a{text-decoration:none;padding:12px 0;border-bottom:2px solid transparent}
 .primary-nav a[aria-current="page"]{border-bottom-color:var(--teal);color:var(--ink)}

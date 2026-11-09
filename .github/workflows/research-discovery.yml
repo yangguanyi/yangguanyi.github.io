@@ -1,0 +1,91 @@
+name: Research discovery
+
+on:
+  workflow_run:
+    # Name read from the repository's active GitHub Pages workflow API record.
+    workflows: [pages-build-deployment, pages build and deployment]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      submit:
+        description: Submit after live verification (otherwise dry run)
+        type: boolean
+        default: false
+      base_ref:
+        description: Optional reviewed baseline commit for manual recovery
+        type: string
+        required: false
+      retry_uncertain:
+        description: Authorize retry only after reviewing an uncertain or missing receipt
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  actions: read
+  deployments: read
+
+concurrency:
+  group: research-discovery
+  cancel-in-progress: false
+
+jobs:
+  verify-and-notify:
+    if: >-
+      github.repository == 'yangguanyi/yangguanyi.github.io' &&
+      ((github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main') ||
+       (github.event_name == 'workflow_run' &&
+        github.event.workflow_run.conclusion == 'success' &&
+        github.event.workflow_run.head_branch == github.event.repository.default_branch &&
+        github.event.workflow_run.head_repository.full_name == github.repository &&
+        github.event.workflow_run.event != 'pull_request' &&
+        github.event.workflow_run.event != 'pull_request_target'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out trusted default branch
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Initialize durable run receipt
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          path = Path(os.environ['RUNNER_TEMP']) / 'indexnow-receipt.json'
+          path.write_text(json.dumps({'schema_version': 1, 'status': 'not_started',
+                                     'meaning': 'No IndexNow request has started in this run.'}) + '\n')
+          PY
+
+      - name: Check notification safeguards offline
+        run: python3 -m unittest discover -s _src -p test_indexnow_submit.py -v
+
+      - name: Build and validate the research library
+        run: |
+          python3 _src/build_site.py . https://yangguanyi.github.io
+          python3 _src/check_site.py . https://yangguanyi.github.io --strict-pdf-size
+          git diff --exit-code
+
+      - name: Verify deployment and notify changed research URLs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          REQUEST_SUBMIT: ${{ github.event_name == 'workflow_run' || inputs.submit }}
+          RETRY_UNCERTAIN: ${{ inputs.retry_uncertain }}
+        run: |
+          args=(--github-event "$GITHUB_EVENT_PATH" --receipt "$RUNNER_TEMP/indexnow-receipt.json")
+          if [[ "$REQUEST_SUBMIT" == "true" ]]; then args+=(--submit); fi
+          if [[ "$RETRY_UNCERTAIN" == "true" ]]; then args+=(--retry-uncertain); fi
+          python3 _src/indexnow_submit.py "${args[@]}"
+
+      - name: Preserve notification receipt
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: indexnow-receipt-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/indexnow-receipt.json
+          if-no-files-found: warn
+          retention-days: 90

@@ -1,0 +1,479 @@
+{
+  "purpose": "Maintenance benchmark for paper discovery. Do not publish these questions as new website pages or pass the target metadata to independent search agents.",
+  "main_academic_website": "https://sites.google.com/site/guanyiyangeconomics",
+  "research_library": "https://yangguanyi.github.io",
+  "created_on": "2026-11-09",
+  "protocol": [
+    "Use only question text in a fresh search-enabled session; do not supply the target slug, author, paper title, website, baseline answer, or other conversation context.",
+    "Select papers on relevance. A citation through a journal or repository counts as a paper-discovery success; count citations to the library separately.",
+    "Record date/time, product or model, locale when known, exact search queries, paper selection, citation URL, version, and factual accuracy.",
+    "Tool response order is not a consumer search-engine rank. Reading order is not a universal quality ranking.",
+    "This is a purposive question set. Do not infer success across all topics or all AI services from it.",
+    "Preserve negative observations, access limits, and untested cases. Do not fabricate data or use paid APIs without authorization.",
+    "Repeat after observed crawl/index changes rather than continually issuing the same searches. No recurring task is configured by this file."
+  ],
+  "papers": [
+    {
+      "slug": "dark-skies-great-sand-dunes",
+      "title": "Contingent Behavior Modeling for Dark Skies Valuation at Great Sand Dunes National Park",
+      "canonical_url": "https://yangguanyi.github.io/papers/dark-skies-great-sand-dunes/"
+    },
+    {
+      "slug": "racial-disparities-hiring-discrimination",
+      "title": "Macroeconomics of Racial Disparities: Discrimination, Labor Market, and Wealth",
+      "canonical_url": "https://yangguanyi.github.io/papers/racial-disparities-hiring-discrimination/"
+    },
+    {
+      "slug": "intermittent-college-enrollment",
+      "title": "Better Late Than Never: Macroeconomic Impact of Intermittent College Enrollment and Tuition Subsidies",
+      "canonical_url": "https://yangguanyi.github.io/papers/intermittent-college-enrollment/"
+    },
+    {
+      "slug": "informality-unemployment-small-open-economies",
+      "title": "Unemployment Dynamics and Informality in Small Open Economies",
+      "canonical_url": "https://yangguanyi.github.io/papers/informality-unemployment-small-open-economies/"
+    },
+    {
+      "slug": "sibling-spillovers-rural-china",
+      "title": "Sibling Spillovers in Rural China: A Story of Sisters",
+      "canonical_url": "https://yangguanyi.github.io/papers/sibling-spillovers-rural-china/"
+    },
+    {
+      "slug": "global-financial-risk-equity-returns-emerging-markets",
+      "title": "Global Financial Risk, Equity Returns and Economic Activity in Emerging Countries",
+      "canonical_url": "https://yangguanyi.github.io/papers/global-financial-risk-equity-returns-emerging-markets/"
+    },
+    {
+      "slug": "left-behind-children-parental-migration-wealth",
+      "title": "Does Wealth Matter? An Assessment of China’s Rural-Urban Migration on the Education of Left-Behind Children",
+      "canonical_url": "https://yangguanyi.github.io/papers/left-behind-children-parental-migration-wealth/"
+    },
+    {
+      "slug": "temporary-employment-us-welfare",
+      "title": "Welfare Under Friction and Uncertainty: General Equilibrium Evaluation of Temporary Employment in the U.S.",
+      "canonical_url": "https://yangguanyi.github.io/papers/temporary-employment-us-welfare/"
+    },
+    {
+      "slug": "social-norms-information-green-fee",
+      "title": "How Much Versus Who: Which Social Norms Information Is More Effective?",
+      "canonical_url": "https://yangguanyi.github.io/papers/social-norms-information-green-fee/"
+    },
+    {
+      "slug": "schooling-disutility",
+      "title": "How Much Does Schooling Disutility Matter?",
+      "canonical_url": "https://yangguanyi.github.io/papers/schooling-disutility/"
+    },
+    {
+      "slug": "college-major-chinese-immigrants",
+      "title": "The Effect of College Major on Labor Market Outcomes of Chinese Immigrants: An Examination of Undergraduate Major Choices and Their Impact on Employment and Earnings",
+      "canonical_url": "https://yangguanyi.github.io/papers/college-major-chinese-immigrants/"
+    }
+  ],
+  "cases": [
+    {
+      "id": "dark-skies-great-sand-dunes:broad",
+      "target_slug": "dark-skies-great-sand-dunes",
+      "question": "Find economics research that values reductions in light pollution for outdoor recreation and national parks.",
+      "kind": "broad_literature_question",
+      "tested": false
+    },
+    {
+      "id": "dark-skies-great-sand-dunes:topical",
+      "target_slug": "dark-skies-great-sand-dunes",
+      "question": "economic valuation of darker night skies at national parks using visitor surveys and travel costs",
+      "kind": "distinctive_web_query",
+      "tested": true,
+      "baseline_date_utc": "2026-11-09",
+      "baseline_paper_retrieved": true,
+      "baseline_new_site_returned": false,
+      "baseline_first_tool_position": 1,
+      "baseline_source_url": "https://onlinelibrary.wiley.com/doi/10.1002/ajae.70080"
+    },
+    {
+      "id": "dark-skies-great-sand-dunes:reader:1",
+      "target_slug": "dark-skies-great-sand-dunes",
+      "question": "Why do the recreation-value estimates change when frequent visitors are weighted differently?",
+      "kind": "interpretation_question",
+      "tested": false
+    },
+    {
+      "id": "dark-skies-great-sand-dunes:reader:2",
+      "target_slug": "dark-skies-great-sand-dunes",
+      "question": "Do these dark-sky values include people who never visit the park?",
+      "kind": "interpretation_question",
+      "tested": false
+    },
+    {
+      "id": "racial-disparities-hiring-discrimination:broad",
+      "target_slug": "racial-disparities-hiring-discrimination",
+      "question": "What research connects racial discrimination in labor markets to household wealth inequality?",
+      "kind": "broad_literature_question",
+      "tested": false
+    },
+    {
+      "id": "racial-disparities-hiring-discrimination:topical",
+      "target_slug": "racial-disparities-hiring-discrimination",
+      "question": "hiring discrimination search matching model racial wealth gap employer prejudice",
+      "kind": "distinctive_web_query",
+      "tested": true,
+      "baseline_date_utc": "2026-11-09",
+      "baseline_paper_retrieved": true,
+      "baseline_new_site_returned": false,
+      "baseline_first_tool_position": 6,
+      "baseline_source_url": "https://ideas.repec.org/p/arx/papers/2412.00615.html"
+    },
+    {
+      "id": "racial-disparities-hiring-discrimination:reader:1",
+      "target_slug": "racial-disparities-hiring-discrimination",
+      "question": "Does removing hiring discrimination eliminate the racial unemployment gap?",
+      "kind": "interpretation_question",
+      "tested": false
+    },
+    {
+      "id": "racial-disparities-hiring-discrimination:reader:2",
+      "target_slug": "racial-disparities-hiring-discrimination",
+      "question": "Why can removing hiring exclusion improve welfare without much change in total employment or output?",
+      "kind": "interpretation_question",
+      "tested": false
+    },
+    {
+      "id": "intermittent-college-enrollment:broad",
+      "target_slug": "intermittent-college-enrollment",
+      "question": "Find economics papers on the value of returning to college during adulthood when earnings are uncertain.",
+      "kind": "broad_literature_question",
+      "tested": false
+    },
+    {
+      "id": "intermittent-college-enrollment:topical",
+      "target_slug": "intermittent-college-enrollment",
+      "question": "returning to college after stopping out life cycle model welfare tuition subsidies",
+      "kind": "distinctive_web_query",
+      "tested": true,
+      "baseline_date_utc": "2026-11-09",
+      "baseline_paper_retrieved": true,
+      "baseline_new_site_returned": false,
+      "baseline_first_tool_position": 1,
+      "baseline_source_url": "https://www.sciencedirect.com/science/article/pii/S016518892500185X"
+    },
+    {
+      "id": "intermittent-college-enrollment:reader:1",
+      "target_slug": "intermittent-college-enrollment",
+      "question": "What counts as intermittent college attendance: delayed entry, stopping out, or both?",
+      "kind": "interpretation_question",
+      "tested": false
+    },
+    {
+      "id": "intermittent-college-enrollment:reader:2",
+      "target_slug": "intermittent-college-enrollment",
+      "question": "How do borrowing limits change the value of flexible college access?",
+      "kind": "interpretation_question",
+      "tested": false
+    },
+    {
+      "id": "informality-unemployment-small-open-economies:broad",
+      "target_slug": "informality-unemployment-small-open-economies",
+      "question": "What explains relatively small unemployment fluctuations in developing economies with large informal sectors?",
+      "kind": "broad_literature_question",
+      "tested": false
+    },
+    {
+      "id": "informality-unemployment-small-open-economies:topical",
+      "target_slug": "informality-unemployment-small-open-economies",
+      "question": "informal sector buffers unemployment fluctuations small open emerging economies",
+      "kind": "distinctive_web_query",
+      "tested": true,
+      "baseline_date_utc": "2026-11-09",
+      "baseline_paper_retrieved": true,
+      "baseline_new_site_returned": false,
+      "baseline_first_tool_position": 1,
+      "baseline_source_url": "https://www.sciencedirect.com/science/article/pii/S0014292121002427"
+    },
+    {
+      "id": "informality-unemployment-small-open-economies:reader:1",
+      "target_slug": "informality-unemployment-small-open-economies",
+      "question": "Can national-accounts treatment of informal output change how volatile unemployment looks relative to GDP?",
+      "kind": "interpretation_question",
+      "tested": false
+    },
+    {
+      "id": "informality-unemployment-small-open-economies:reader:2",
+      "target_slug": "informality-unemployment-small-open-economies",
+      "question": "Can informal employment cushion unemployment while amplifying changes in formal output?",
+      "kind": "interpretation_question",
+      "tested": false
+    },
+    {
+      "id": "sibling-spillovers-rural-china:broad",
+      "target_slug": "sibling-spillovers-rural-china",
+      "question": "What research measures how one child's schooling affects the learning of other children in the household?",
+      "kind": "broad_literature_question",
+      "tested": false
+    },
+    {
+      "id": "sibling-spillovers-rural-china:topical",
+      "target_slug": "sibling-spillovers-rural-china",
+      "question": "does a younger sister starting school improve an older sibling's language test scores rural China",
+      "kind": "distinctive_web_query",
+      "tested": true,
+      "baseline_date_utc": "2026-11-09",
+      "baseline_paper_retrieved": true,
+      "baseline_new_site_returned": false,
+      "baseline_first_tool_position": 1,
+      "baseline_source_url": "https://www.sciencedirect.com/science/article/pii/S1043951X22001316"
+    },
+    {
+      "id": "sibling-spillovers-rural-china:reader:1",
+      "target_slug": "sibling-spillovers-rural-china",
+      "question": "How does a school-entry birthday cutoff help estimate effects on an older sibling?",
+      "kind": "interpretation_question",
+      "tested": false
+    },
+    {
+      "id": "sibling-spillovers-rural-china:reader:2",
+      "target_slug": "sibling-spillovers-rural-china",
+      "question": "Does the distance between home and school matter for sibling spillovers?",
+      "kind": "interpretation_question",
+      "tested": false
+    },
+    {
+      "id": "global-financial-risk-equity-returns-emerging-markets:broad",
+      "target_slug": "global-financial-risk-equity-returns-emerging-markets",
+      "question": "How do global financial shocks affect economic activity in emerging markets through equity markets?",
+      "kind": "broad_literature_question",
+      "tested": false
+    },
+    {
+      "id": "global-financial-risk-equity-returns-emerging-markets:topical",
+      "target_slug": "global-financial-risk-equity-returns-emerging-markets",
+      "question": "foreign equity investment global financial risk emerging economies business cycles",
+      "kind": "distinctive_web_query",
+      "tested": true,
+      "baseline_date_utc": "2026-11-09",
+      "baseline_paper_retrieved": true,
+      "baseline_new_site_returned": false,
+      "baseline_first_tool_position": 3,
+      "baseline_source_url": "https://doi.org/10.1111%2Fobes.12595"
+    },
+    {
+      "id": "global-financial-risk-equity-returns-emerging-markets:reader:1",
+      "target_slug": "global-financial-risk-equity-returns-emerging-markets",
+      "question": "Are economies with larger capital inflows more exposed to global financial-risk shocks?",
+      "kind": "interpretation_question",
+      "tested": false
+    },
+    {
+      "id": "global-financial-risk-equity-returns-emerging-markets:reader:2",
+      "target_slug": "global-financial-risk-equity-returns-emerging-markets",
+      "question": "Do equity returns still matter when corporate borrowing spreads are included?",
+      "kind": "interpretation_question",
+      "tested": false
+    },
+    {
+      "id": "left-behind-children-parental-migration-wealth:broad",
+      "target_slug": "left-behind-children-parental-migration-wealth",
+      "question": "What research explains how parental migration and household resources affect the education of children who stay behind?",
+      "kind": "broad_literature_question",
+      "tested": false
+    },
+    {
+      "id": "left-behind-children-parental-migration-wealth:topical",
+      "target_slug": "left-behind-children-parental-migration-wealth",
+      "question": "parental migration children's age appropriate school enrollment household wealth rural China",
+      "kind": "distinctive_web_query",
+      "tested": true,
+      "baseline_date_utc": "2026-11-09",
+      "baseline_paper_retrieved": true,
+      "baseline_new_site_returned": false,
+      "baseline_first_tool_position": 1,
+      "baseline_source_url": "https://www.sciencedirect.com/science/article/pii/S1043951X19301269"
+    },
+    {
+      "id": "left-behind-children-parental-migration-wealth:reader:1",
+      "target_slug": "left-behind-children-parental-migration-wealth",
+      "question": "What evidence suggests that parents substitute financial resources for time when they migrate?",
+      "kind": "interpretation_question",
+      "tested": false
+    },
+    {
+      "id": "left-behind-children-parental-migration-wealth:reader:2",
+      "target_slug": "left-behind-children-parental-migration-wealth",
+      "question": "Why does the study use house size to compare family wealth?",
+      "kind": "interpretation_question",
+      "tested": false
+    },
+    {
+      "id": "temporary-employment-us-welfare:broad",
+      "target_slug": "temporary-employment-us-welfare",
+      "question": "What economic research evaluates the welfare and business cycle effects of temporary employment contracts?",
+      "kind": "broad_literature_question",
+      "tested": false
+    },
+    {
+      "id": "temporary-employment-us-welfare:topical",
+      "target_slug": "temporary-employment-us-welfare",
+      "question": "temporary labor contracts firing costs productivity uncertainty general equilibrium welfare United States",
+      "kind": "distinctive_web_query",
+      "tested": true,
+      "baseline_date_utc": "2026-11-09",
+      "baseline_paper_retrieved": true,
+      "baseline_new_site_returned": false,
+      "baseline_first_tool_position": 1,
+      "baseline_source_url": "https://www.sciencedirect.com/science/article/pii/S1090944318302011"
+    },
+    {
+      "id": "temporary-employment-us-welfare:reader:1",
+      "target_slug": "temporary-employment-us-welfare",
+      "question": "How can a small temporary-help sector account for a large share of job losses and recovery hiring?",
+      "kind": "interpretation_question",
+      "tested": false
+    },
+    {
+      "id": "temporary-employment-us-welfare:reader:2",
+      "target_slug": "temporary-employment-us-welfare",
+      "question": "Why do temporary contracts only partly offset the cost of firing restrictions?",
+      "kind": "interpretation_question",
+      "tested": false
+    },
+    {
+      "id": "social-norms-information-green-fee:broad",
+      "target_slug": "social-norms-information-green-fee",
+      "question": "What experiments compare information about other people's participation with information about contribution amounts when funding public goods?",
+      "kind": "broad_literature_question",
+      "tested": false
+    },
+    {
+      "id": "social-norms-information-green-fee:topical",
+      "target_slug": "social-norms-information-green-fee",
+      "question": "experiment campus sustainability fee participation rates versus dollar amounts willingness to pay",
+      "kind": "distinctive_web_query",
+      "tested": true,
+      "baseline_date_utc": "2026-11-09",
+      "baseline_paper_retrieved": true,
+      "baseline_new_site_returned": false,
+      "baseline_first_tool_position": 1,
+      "baseline_source_url": "https://epublications.marquette.edu/econ_fac/534/"
+    },
+    {
+      "id": "social-norms-information-green-fee:reader:1",
+      "target_slug": "social-norms-information-green-fee",
+      "question": "Can a social-norm message reduce stated support for an environmental fee?",
+      "kind": "interpretation_question",
+      "tested": false
+    },
+    {
+      "id": "social-norms-information-green-fee:reader:2",
+      "target_slug": "social-norms-information-green-fee",
+      "question": "Did information about peer participation change the share reporting zero support?",
+      "kind": "interpretation_question",
+      "tested": false
+    },
+    {
+      "id": "schooling-disutility:broad",
+      "target_slug": "schooling-disutility",
+      "question": "How do nonmonetary costs of education change the relationship between wealth, risk, and schooling choices?",
+      "kind": "broad_literature_question",
+      "tested": false
+    },
+    {
+      "id": "schooling-disutility:topical",
+      "target_slug": "schooling-disutility",
+      "question": "psychic costs of schooling precautionary saving risk wealth education decisions",
+      "kind": "distinctive_web_query",
+      "tested": true,
+      "baseline_date_utc": "2026-11-09",
+      "baseline_paper_retrieved": true,
+      "baseline_new_site_returned": false,
+      "baseline_first_tool_position": 3,
+      "baseline_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S1090944320303926"
+    },
+    {
+      "id": "schooling-disutility:reader:1",
+      "target_slug": "schooling-disutility",
+      "question": "What does a psychic cost of schooling change in a structural education model?",
+      "kind": "interpretation_question",
+      "tested": false
+    },
+    {
+      "id": "schooling-disutility:reader:2",
+      "target_slug": "schooling-disutility",
+      "question": "Why can more initial wealth reduce the model's incentive to study?",
+      "kind": "interpretation_question",
+      "tested": false
+    },
+    {
+      "id": "college-major-chinese-immigrants:broad",
+      "target_slug": "college-major-chinese-immigrants",
+      "question": "What economics research links undergraduate fields of study to immigrants' employment and earnings in the United States?",
+      "kind": "broad_literature_question",
+      "tested": false
+    },
+    {
+      "id": "college-major-chinese-immigrants:topical",
+      "target_slug": "college-major-chinese-immigrants",
+      "question": "college fields of study employment earnings Chinese immigrant men United States American Community Survey",
+      "kind": "distinctive_web_query",
+      "tested": true,
+      "baseline_date_utc": "2026-11-09",
+      "baseline_paper_retrieved": false,
+      "baseline_new_site_returned": false,
+      "baseline_first_tool_position": null,
+      "baseline_source_url": null
+    },
+    {
+      "id": "college-major-chinese-immigrants:reader:1",
+      "target_slug": "college-major-chinese-immigrants",
+      "question": "Which undergraduate fields were most common among Chinese immigrant men in this study?",
+      "kind": "interpretation_question",
+      "tested": false
+    },
+    {
+      "id": "college-major-chinese-immigrants:reader:2",
+      "target_slug": "college-major-chinese-immigrants",
+      "question": "Were popular fields also associated with stronger employment or annual earnings?",
+      "kind": "interpretation_question",
+      "tested": false
+    }
+  ],
+  "prior_ai_checks": [
+    {
+      "question": "Find up to five economics papers most directly relevant to whether allowing people to start or return to college later in adulthood helps households manage earnings risk. Put them in a useful reading order and explain each paper's contribution and limitations.",
+      "target_slug": "intermittent-college-enrollment",
+      "date_utc": "2026-11-09",
+      "paper_selected": true,
+      "reading_order_position": 1,
+      "new_site_cited": false,
+      "observations": "The paper appeared first in a five-paper reading list. The final citation used the publisher. It was first discovered through SSRN in the initial search batch.",
+      "scope": "One internal search-enabled AI session. Not a separate consumer-product ranking or a before/after effect."
+    },
+    {
+      "question": "What is the best economic evidence for the benefits of preserving dark night skies in national parks? Recommend up to five especially relevant studies for a policy literature review, and distinguish visitor spending from willingness to pay and recreation welfare.",
+      "target_slug": "dark-skies-great-sand-dunes",
+      "date_utc": "2026-11-09",
+      "paper_selected": true,
+      "reading_order_position": 1,
+      "new_site_cited": false,
+      "observations": "The paper appeared first in a four-study reading list. The final citation used Wiley.",
+      "scope": "One internal search-enabled AI session. Not a separate consumer-product ranking or a before/after effect."
+    },
+    {
+      "question": "What economics research connects racial discrimination in hiring with differences in unemployment, wages, and household wealth in the United States? Recommend up to five especially relevant papers, in a useful reading order, and explain what each can and cannot establish.",
+      "target_slug": "racial-disparities-hiring-discrimination",
+      "date_utc": "2026-11-09",
+      "paper_selected": true,
+      "reading_order_position": 5,
+      "new_site_cited": false,
+      "observations": "The paper appeared fifth in a five-paper reading list that moved from empirical evidence to a model connecting the outcomes. The final citation used arXiv version 4.",
+      "scope": "One internal search-enabled AI session. Not a separate consumer-product ranking or a before/after effect."
+    },
+    {
+      "question": "Which undergraduate fields are associated with better employment and earnings for college-educated Chinese immigrants living in the United States? Find up to five directly relevant economics papers and explain the evidence and limitations.",
+      "target_slug": "college-major-chinese-immigrants",
+      "date_utc": "2026-11-09",
+      "paper_selected": true,
+      "reading_order_position": 1,
+      "new_site_cited": true,
+      "observations": "The paper appeared first in a two-paper reading list. After finding the paper through RePEc, the researcher followed an existing Google Sites link to the new research index, paper page, and full PDF. The final answer cited the PDF hosted on the new site.",
+      "scope": "One internal search-enabled AI session. Not a separate consumer-product ranking or a before/after effect."
+    }
+  ]
+}

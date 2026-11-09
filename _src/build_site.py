@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Build the checked-in academic website without network access or dependencies.
+"""Build the checked-in research library without network access or dependencies.
 
 Usage: python3 /path/to/site/_src/build_site.py [output_dir] [base_url]
 The default output is the repository root. All source paths are script-relative.
@@ -27,6 +27,8 @@ OUT = ROOT
 # Change this only when site-level content changes, not on each rebuild.
 SITE_REVISED = "2026-11-09"
 NAME = "Guanyi Yang"
+SITE_NAME = "Guanyi Yang Research Library"
+MAIN_SITE = "https://sites.google.com/site/guanyiyangeconomics"
 EMAIL = "gyang@ColoradoCollege.edu"
 SCHOLAR = "https://scholar.google.com/citations?user=nlgkEE8AAAAJ&hl=en"
 REPEC = "https://ideas.repec.org/f/pya376.html"
@@ -66,6 +68,7 @@ a{color:var(--navy);text-decoration-thickness:1px;text-underline-offset:.22em}a:
 .site-header{border-bottom:1px solid var(--line)}
 .header-inner{min-height:94px;display:flex;align-items:center;justify-content:space-between;gap:28px}
 .brand{font:600 1.35rem/1.2 var(--serif);letter-spacing:-.035em;text-decoration:none;color:var(--ink)}
+.brand-note{display:block;margin-top:6px;font:500 .62rem/1.2 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
 .primary-nav{display:flex;align-items:center;gap:30px;font-size:.875rem}
 .primary-nav a{text-decoration:none;padding:12px 0;border-bottom:2px solid transparent}
 .primary-nav a[aria-current="page"]{border-bottom-color:var(--teal);color:var(--ink)}
@@ -259,10 +262,11 @@ def versions(p):
 
 
 def nav(active):
-    items = [("research", "Research", "research/"), ("cv", "CV", "cv/"), ("more", "More", "more/")]
-    return "".join(
-        f'<a href="{e(url(path))}"' + (' aria-current="page"' if key == active else "") + f">{label}</a>"
-        for key, label, path in items
+    return (
+        f'<a href="{e(url("research/"))}"'
+        + (' aria-current="page"' if active == "research" else "")
+        + '>Papers</a>'
+        + f'<a href="{e(MAIN_SITE)}">Main website</a>'
     )
 
 
@@ -275,10 +279,11 @@ def page(title, body, desc, path, entity=None, extra_head="", active=None, modif
         "dateModified": modified, "isPartOf": {"@id": url() + "#website"},
     }
     if entity:
-        webpage["mainEntity"] = {"@id": entity["@id"]}
+        webpage["about" if not path else "mainEntity"] = {"@id": entity["@id"]}
     graph = [webpage] + ([entity] if entity else [])
     if not path:
-        graph.append({"@type": "WebSite", "@id": url() + "#website", "url": url(), "name": NAME})
+        graph.append({"@type": "WebSite", "@id": url() + "#website", "url": url(), "name": SITE_NAME,
+                      "publisher": {"@id": url() + "#person"}})
     ld = json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False).replace("<", "\\u003c")
     og_type = "article" if path.startswith("papers/") else "website"
     current_home = ' aria-current="page"' if not path else ""
@@ -295,7 +300,7 @@ def page(title, body, desc, path, entity=None, extra_head="", active=None, modif
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:type" content="{og_type}">
 <meta property="og:url" content="{e(canon)}">
-<meta property="og:site_name" content="{e(NAME)}">
+<meta property="og:site_name" content="{e(SITE_NAME)}">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="{e(url('style.css'))}">
 {extra_head}
@@ -304,15 +309,16 @@ def page(title, body, desc, path, entity=None, extra_head="", active=None, modif
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header"><div class="wrap header-inner">
-<a class="brand" href="{e(url())}"{current_home}>Guanyi Yang</a>
+<a class="brand" href="{e(url())}"{current_home}>Guanyi Yang<span class="brand-note">Research library</span></a>
 <nav class="primary-nav" aria-label="Main navigation">{nav(active)}</nav>
 </div></header>
 <main id="main" class="wrap {e(page_class)}">
 {body}
 </main>
 <footer class="site-footer"><div class="wrap footer-inner">
-<p>Guanyi Yang<br>Department of Economics &amp; Business · Colorado College</p>
+<p>Guanyi Yang · Research library<br>Department of Economics &amp; Business · Colorado College</p>
 <div class="footer-links">
+<a href="{e(MAIN_SITE)}">Main academic website</a>
 <a href="mailto:{e(EMAIL)}">Email</a>
 <a href="{e(SCHOLAR)}">Google Scholar</a>
 <a href="{e(REPEC)}">RePEc</a>
@@ -442,7 +448,7 @@ def jsonld_article(p):
     for name, _ in p["authors"]:
         author = {"@type": "Person", "name": name}
         if name == NAME:
-            author.update({"@id": url() + "#person", "url": url()})
+            author.update({"@id": url() + "#person", "url": MAIN_SITE})
         authors.append(author)
     ld = {
         "@type": "Report" if p["kind"] == "report" else "ScholarlyArticle",
@@ -615,8 +621,9 @@ def research_page():
     if pd.IN_PROGRESS:
         jump.append(f'<a href="#in-progress">In progress<span>{len(pd.IN_PROGRESS)}</span></a>')
     body = [
-        '<div class="intro"><p class="eyebrow">Guanyi Yang · Economics</p><h1>Research</h1>',
-        '<p class="lede">I study how labor markets, education, and unequal resources shape economic opportunity. My work combines quantitative macroeconomic models with empirical research on families, emerging economies, and the value of the natural environment.</p></div>',
+        '<div class="intro"><p class="eyebrow">Guanyi Yang · Research library</p><h1>Research papers</h1>',
+        '<p class="lede">Publications and working papers on labor markets, education, inequality, emerging economies, and environmental valuation. Each paper page brings together its abstract, findings, methods, and available full texts.</p>',
+        f'<p class="meta" style="margin-top:15px">For my academic profile and other information, visit my <a href="{e(MAIN_SITE)}">main website</a>.</p></div>',
         theme_links(),
         '<nav class="jump-links" aria-label="Research sections">' + "".join(jump) + "</nav>",
     ]
@@ -625,7 +632,7 @@ def research_page():
     body.append('<section class="research-section" id="other-writing"><h2>Other writing</h2><p class="meta">Yang, G. (2012). <a href="https://fraser.stlouisfed.org/title/economic-trends-federal-reserve-bank-cleveland-3952/economic-trends-august-2012-493107?page=25">A Look at Ohio’s Foreign-Born Population</a>. <em>Economic Trends</em>, Federal Reserve Bank of Cleveland, August 6, 2012.</p></section>')
     body.append(f'<p class="meta research-footnote">Full publication records: <a href="{e(SCHOLAR)}">Google Scholar</a> · <a href="{e(REPEC)}">RePEc / IDEAS</a> · <a href="{e(url("cv/"))}">CV</a></p>')
     desc = "Publications and working papers by Guanyi Yang on labor markets, education, inequality, emerging economies, and environmental valuation."
-    return "research/", page("Research | Guanyi Yang", "\n".join(body), desc, "research/", active="research")
+    return "research/", page("Papers | Guanyi Yang Research Library", "\n".join(body), desc, "research/", active="research")
 
 
 def theme_page(key, value):
@@ -658,28 +665,25 @@ def home_page():
         "jobTitle": "Gerald L. Schlessman Assistant Professor of Economics and Business",
         "worksFor": {"@type": "CollegeOrUniversity", "name": "Colorado College", "url": "https://www.coloradocollege.edu/"},
         "alumniOf": [{"@type": "CollegeOrUniversity", "name": "The Ohio State University"}, {"@type": "CollegeOrUniversity", "name": "Ohio Wesleyan University"}],
-        "email": "mailto:" + EMAIL, "url": url(),
-        "sameAs": [SCHOLAR, REPEC, GITHUB, GLO, "https://www.researchgate.net/profile/Guanyi_Yang", "https://sites.google.com/site/guanyiyangeconomics"],
+        "email": "mailto:" + EMAIL, "url": MAIN_SITE,
+        "sameAs": [SCHOLAR, REPEC, GITHUB, GLO, "https://www.researchgate.net/profile/Guanyi_Yang"],
         "knowsAbout": ["Macroeconomics", "Labor economics", "Heterogeneous-agent models", "Economics of education", "Environmental valuation", "Racial inequality", "Emerging-market business cycles"],
     }
     body = [
-        '<div class="home-hero"><section aria-labelledby="name-heading"><p class="eyebrow">Economics · Colorado College</p>',
-        '<h1 id="name-heading">Guanyi Yang</h1>',
-        '<p class="home-role">Gerald L. Schlessman Assistant Professor<br>of Economics and Business</p>',
-        '<p class="home-copy">I study labor markets, human capital, and inequality using heterogeneous-agent macroeconomic models. My empirical work examines education and families in China, emerging-market business cycles, and the economic value of dark skies.</p>',
-        f'<div class="cta-links"><a class="button" href="{e(url("research/"))}">Explore my research</a><a href="{e(url("pdf/Guanyi-Yang-CV.pdf"))}">Download CV</a></div></section>',
-        '<aside class="home-sidebar" aria-label="Affiliations and contact"><h2>Affiliations</h2>',
-        '<p>Research Fellow<br>Global Labor Organization</p><p>Project Director<br>State of the Rockies</p>',
-        f'<h2 style="margin-top:25px">Contact</h2><p><a href="mailto:{e(EMAIL)}">{e(EMAIL)}</a></p>',
+        '<div class="home-hero"><section aria-labelledby="name-heading"><p class="eyebrow">Guanyi Yang · Economics</p>',
+        '<h1 id="name-heading">Research papers</h1>',
+        '<p class="home-copy">Publications and working papers, with full texts, abstracts, findings, and notes on methods and interpretation. Browse by topic or explore the complete paper list.</p>',
+        f'<div class="cta-links"><a class="button" href="{e(url("research/"))}">Browse all papers</a><a href="{e(MAIN_SITE)}">Main academic website</a></div></section>',
+        '<aside class="home-sidebar" aria-label="About the author"><h2>About the author</h2>',
+        '<p>Guanyi Yang<br>Economics &amp; Business<br>Colorado College</p>',
+        f'<p>This library accompanies my <a href="{e(MAIN_SITE)}">main academic website</a>, which has my academic profile, CV, and other information.</p>',
         f'<ul class="profile-links"><li><a href="{e(SCHOLAR)}">Google Scholar</a></li><li><a href="{e(REPEC)}">RePEc / IDEAS</a></li><li><a href="{e(GITHUB)}">GitHub</a></li></ul></aside></div>',
         '<section class="home-featured" aria-labelledby="selected-heading"><div class="section-heading-row"><h2 id="selected-heading">Selected research</h2>',
         f'<a href="{e(url("research/"))}">All publications and working papers</a></div><ul class="paperlist">' + "".join(paper_li(p) for p in selected) + "</ul></section>",
         '<section class="research-section" aria-labelledby="themes-heading"><h2 id="themes-heading">Areas of research</h2>' + theme_links() + "</section>",
-        '<div class="home-bottom"><section><h2>Teaching and student research</h2><p>At Colorado College, I teach macroeconomics, inequality, and education policy. I also direct the State of the Rockies Dark Sky Lab, where undergraduates collaborate on environmental research.</p><p><a href="https://github.com/yangguanyi/computational-macroeconomics-starter-kit">Computational macroeconomics starter kit</a></p></section>',
-        '<section><h2>Applied economics</h2><p>My consulting work includes survey design, economic valuation, causal analysis, and policy modeling.</p><p><a href="http://focalizesolutions.com">Focalize Solutions</a></p></section></div>',
     ]
-    desc = "Guanyi Yang is an economist at Colorado College studying labor markets, human capital, inequality, emerging economies, and environmental valuation."
-    return "", page("Guanyi Yang | Economist, Colorado College", "\n".join(body), desc, "", person, page_class="home-page")
+    desc = "Publications and working papers by Guanyi Yang, with full texts, abstracts, findings, and notes on methods and interpretation."
+    return "", page("Guanyi Yang | Research Library", "\n".join(body), desc, "", person, page_class="home-page")
 
 
 def cv_page():
@@ -750,9 +754,10 @@ def llms_txt(p):
 
 def root_llms():
     lines = [
-        "# Guanyi Yang: research", "",
+        "# Guanyi Yang: research library", "",
         "> Economist at Colorado College. Research on labor markets, human capital, inequality, emerging economies, and environmental valuation.", "",
         "The HTML paper pages, PDFs, and plain-text research notes below describe the same research. Publication status, version information, and scope are recorded on each page.", "",
+        "This is a companion research library. The main academic website remains " + MAIN_SITE + ".", "",
         "Research index: " + url("research/"), "", "## Papers", "",
     ]
     for p in sorted(pd.PAPERS, key=lambda p: (-int(p["year"]), p["title"])):
@@ -766,7 +771,7 @@ def root_llms():
             line += " " + item.get("status", "Draft forthcoming") + "."
             lines.append(line)
     lines.extend(["", "## Themes", ""] + [f"- [{v['title']}]({url('themes/' + k + '/')})" for k, v in pd.THEMES.items()])
-    lines.extend(["", "## Profiles", "", "- Google Scholar: " + SCHOLAR, "- RePEc: " + REPEC, "- CV: " + url("cv/"), ""])
+    lines.extend(["", "## Profiles", "", "- Main academic website: " + MAIN_SITE, "- Google Scholar: " + SCHOLAR, "- RePEc: " + REPEC, "- CV: " + url("cv/"), ""])
     return "\n".join(lines)
 
 

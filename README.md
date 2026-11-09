@@ -1,6 +1,14 @@
-# Guanyi Yang's academic website
+# Guanyi Yang's research library
 
-The public site is [yangguanyi.github.io](https://yangguanyi.github.io). It is a static GitHub Pages website with a research index, individual paper pages, topic pages, a homepage, CV, and other resources. The build uses Python's standard library and makes no network requests.
+The public research library is [yangguanyi.github.io](https://yangguanyi.github.io). It complements Guanyi Yang's [main academic website on Google Sites](https://sites.google.com/site/guanyiyangeconomics). Its purpose is to make the papers accessible, understandable, and accurately citable in literature searches and AI-assisted research. It is not a replacement for the main academic website.
+
+The library is a static GitHub Pages site with a paper index, individual paper pages, topic pages, and a research landing page. Existing CV and other resource URLs remain available for continuity. The build uses Python's standard library and makes no network requests.
+
+## Relationship to the main website
+
+Keep the Google Site as the primary professional website, including the primary website links on institutional and author profiles. Where an additional link is supported, label this site "Research library" or "Paper summaries and full texts". Retain the existing Google Site link to this research library.
+
+The library's navigation links back to the main academic website. Author metadata uses the Google Site as Guanyi Yang's primary URL. Each unique paper page keeps its own GitHub canonical URL, citation metadata, and PDF URL. Do not redirect the Google Site to GitHub, canonicalize individual paper pages to the Google homepage, or change profiles to suggest that this library replaces the main site.
 
 ## Rebuild
 
@@ -67,6 +75,22 @@ The site provides ordinary HTML links, freely visible abstracts, colocated PDFs,
 `robots.txt` preserves the existing crawler-access policy on every rebuild. The generator updates its sitemap URL but does not change search or training preferences. Google verification files, the existing IndexNow key file, and legacy PDF URLs are also preserved. Submitting a sitemap or confirming a successful build does not establish that an external search service has indexed a page.
 
 The sitemap's `lastmod` values come from each paper's `reviewed_on` and the generator's `SITE_REVISED` constant. They do not change just because a build runs on another day. Update `SITE_REVISED` when site-level content materially changes. The sitemap excludes notes, citation downloads, and verification files.
+
+## Notifications after deployment
+
+`.github/workflows/research-discovery.yml` checks the built site and runs the IndexNow notifier after the existing trusted Pages workflow completes successfully. It does not replace or reconfigure Pages. It verifies the published bytes before sending changed public HTML/PDF URLs and records the result as a workflow artifact. Verify the first production run after publishing; the presence of the workflow file alone does not establish that the trigger ran.
+
+For offline planning, use `python3 _src/indexnow_submit.py --base-ref BASE_SHA --head-ref HEAD`. Submission requires the explicit `--submit` option after deployment. The script reads committed objects and reuses the existing key. Read [_src/DISCOVERY_AUTOMATION.md](_src/DISCOVERY_AUTOMATION.md) for the acknowledged baseline, receipt states, duplicate protection, and recovery when history is unavailable. No daily or weekly resubmission is configured.
+
+Run the meaningful notification safeguards with `python3 -m unittest discover -s _src -p test_indexnow_submit.py -v`. These tests use temporary repositories and fake HTTP responses; they do not notify a live search engine.
+
+## Measuring paper discovery
+
+`_src/discovery_queries.json` is a maintenance benchmark covering the 11 available papers. It contains 11 broad literature questions, the 11 distinctive topical queries tested on November 9, 2026, and 22 interpretation questions. It also records four independent AI search observations. Untested questions are labeled. The file is not a set of instructions for search engines and should not be turned into thin keyword pages.
+
+Give an independent research session only a question's text. Keep the target title, author, slug, website, and previous result out of that session. Record the product, date, exact queries, selected papers, citation URLs, versions, and factual accuracy. Count relevant citations through a publisher or repository as successes for the paper; track citations to this library separately. Search-tool order is not a consumer search ranking, and reading-list order is not a universal quality measure.
+
+Private Google Search Console and Bing Webmaster Tools reports are separate evidence. A public verification file does not establish that an account owns a verified property. Inspect the exact URL-prefix property `https://yangguanyi.github.io/`, the sitemap, paper-level index status, and available AI performance reports with authorized account access. Do not use the Google Indexing API for ordinary research pages, the deprecated sitemap ping endpoint, or `site:` results as proof of complete indexing. Preserve existing main-website links to Google Sites.
 
 ## Before publishing
 
