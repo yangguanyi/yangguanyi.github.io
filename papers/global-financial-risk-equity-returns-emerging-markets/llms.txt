@@ -1,45 +1,56 @@
 # Global Financial Risk, Equity Returns and Economic Activity in Emerging Countries
 
-> Global financial risk shocks reach emerging economies mainly through equity markets, not sovereign spreads: when the response of equity returns to the VIX is shut down, the share of output variance explained by global financial risk falls from about 10 percent to 2 percent, while shutting down the spread response changes almost nothing.
+> A panel SVAR compares equity markets and borrowing spreads as channels for global financial-risk shocks in emerging economies.
 
-Authors: Jaroslav Horvath (University of New Hampshire); Guanyi Yang (Colorado College)
-Status: Oxford Bulletin of Economics and Statistics, Vol. 86, No. 3, pp. 672–689. DOI 10.1111/obes.12595
+Authors: Jaroslav Horvath, Guanyi Yang
+Status: Published article
+Publication: Oxford Bulletin of Economics and Statistics, Vol. 86, No. 3, pp. 672–689
+Publication date: 2024-06
 Page: https://yangguanyi.github.io/papers/global-financial-risk-equity-returns-emerging-markets/
-
-## What is this paper about?
-
-Global financial risk shocks reach emerging economies mainly through equity markets, not sovereign spreads: when the response of equity returns to the VIX is shut down, the share of output variance explained by global financial risk falls from about 10 percent to 2 percent, while shutting down the spread response changes almost nothing.
+Research note updated: 2026-11-09
+DOI: https://doi.org/10.1111/obes.12595
+Version: Summary based on the published article linked here. Earlier working-paper versions are listed separately below.
 
 ## Abstract
 
 International financial integration exposes countries to external shocks. This paper identifies the impact and transmission of global financial risk (GFR) shocks to emerging market economies (EMEs). Heightened GFR significantly raises EME borrowing costs and lowers equity returns, reducing domestic economic activity. We document a novel transmission channel of GFR shocks to EMEs via international capital flows. Countries experiencing larger capital inflows are more affected by GFR fluctuations. Exploring the transmission through capital flows, GFR shocks affect EMEs mainly through their effect on equity returns, instead of country spreads. We show that equity returns contain more information about EME macroeconomic fluctuations than sovereign and corporate bond spreads.
 
-## Key results
+## Key findings
 
-- A one-standard-deviation increase in global financial risk (VIX) lowers output growth by over 0.4 percentage points and investment growth by over 0.8 points, with troughs about five quarters after the shock, alongside capital outflows, higher country spreads and falling equity prices.
-- Global financial risk explains about 10 percent of output variance, 5 percent of investment variance, 7 percent of country-spread variance and over 15 percent of equity-return variance.
-- Countries with high exposure to capital inflows (Brazil, Chile, Mexico, the Philippines, South Africa, Thailand) see global financial risk explain over 15 percent of output variance, roughly double the share in low-exposure countries.
-- Counterfactuals: muting the equity-return response cuts the global-risk share of output variance from about 10 to 2 percent and of investment variance from 5 to near zero; muting the country-spread response leaves both essentially unchanged.
-- Equity-return innovations account for about 25 percent of output and investment variance; sovereign spread innovations account for a negligible share, and equity returns dominate corporate spreads (EFI and CEMBI) as well.
+- A one-standard-deviation adverse global-risk innovation reduces annual output growth by over 0.4 percentage points and annual investment growth by over 0.8 points at the trough, about five quarters after the shock (Figure 2).
+- In the baseline 20-quarter forecast-error variance decomposition, global risk contributes about 10 percent of output-growth variance, close to 5 percent of investment-growth variance, more than 7 percent of country-spread variance and over 15 percent of equity-return variance (Figure 3).
+- In countries with above-median average net US capital inflows relative to GDP, global risk accounts for over 15 percent of output-growth forecast-error variance, roughly twice the share in the lower-exposure group (Figure 4).
+- Removing the direct response of equity returns to global risk reduces its output-growth variance share from about 10 to 2 percent and its investment-growth share from 5 to near zero. Removing the country-spread response leaves these shares almost unchanged (Figures 5 and 6).
+- Equity-return innovations account for about a quarter of output- and investment-growth forecast-error variance in this specification. Sovereign-spread innovations contribute little, and equity innovations also explain more than corporate-spread innovations in the reduced sample (Figures 7 and 8).
 
-## Limitations and scope (what the paper does not show)
+## Scope and interpretation
 
 - Twelve emerging economies, 1999Q1–2019Q4 (Indonesia from 2004Q2, Thailand to 2006Q1); the sample ends before the pandemic.
 - Identification is a recursive panel SVAR with global financial risk ordered as an exogenous block and equity returns ordered last; capital flows are measured vis-à-vis the United States (TIC data), with a robustness check using global flows.
 - The collateral-constraint model (Mendoza and Smith 2006) is used to interpret the mechanism, not estimated.
 
-## Important context and definitions
+## Context
 
-- Global financial risk is proxied by the VIX in the published version and by the U.S. Baa spread in robustness checks; the 2022 working paper version reversed those roles.
+- The published baseline uses the VIX as the global-risk proxy; a robustness exercise uses the US Baa credit spread.
 - Country spreads are J.P. Morgan EMBIG; corporate spreads are the EFI of Caballero, Fernández and Park (2019) and J.P. Morgan’s CEMBI.
 
-## Data and methods
+## Data and approach
 
 Data: IMF International Financial Statistics (output, investment, trade balance); J.P. Morgan EMBIG spreads via World Bank GEM; Global Financial Data stock indexes; U.S. Treasury TIC capital flows; VIX and Baa spread from FRED. Quarterly, 1999Q1–2019Q4.
-Method: Panel structural VAR (least-squares dummy variable estimation, one lag, recursive identification) with output, investment, trade balance, global financial risk, capital flows, country spread and equity returns; impulse responses, variance decompositions and counterfactuals that mute specific transmission channels.
-Contribution: Evidence that the international equity channel, not bond spreads, is the main conduit of global financial risk to emerging economies, and that equity returns carry information about emerging-market activity beyond sovereign and corporate spreads.
 
-## Related work
+Method: Panel structural VAR (least-squares dummy variable estimation, one lag, recursive identification) with output, investment, trade balance, global financial risk, capital flows, country spread and equity returns; impulse responses, variance decompositions and counterfactuals that mute specific transmission channels.
+
+Contribution: Compares equity and borrowing-spread transmission channels in emerging-market business cycles, including international capital flows in the estimated panel SVAR.
+
+## Paper and resources
+
+- [Read published paper (PDF)](https://yangguanyi.github.io/papers/global-financial-risk-equity-returns-emerging-markets/paper.pdf)
+- [Published article (Wiley)](https://doi.org/10.1111/obes.12595)
+- [Published PDF in the author's repository](https://raw.githubusercontent.com/yangguanyi/Published/main/2024_OBES_Horvath_Yang.pdf)
+- [Working paper version, December 2023 (PDF)](https://yangguanyi.github.io/pdf/Horvath-Yang-2023-Global-Financial-Risk-Equity-Returns-Emerging-Countries-WP.pdf)
+- [RePEc article record](https://ideas.repec.org/a/bla/obuest/v86y2024i3p672-689.html)
+
+## Related literature
 
 - Akinci, Ö. (2013). Global financial conditions, country spreads and macroeconomic fluctuations in emerging countries. Journal of International Economics 91(2): 358–371. https://doi.org/10.1016/j.jinteco.2013.07.005
 - Caballero, J., A. Fernández and J. Park (2019). On corporate borrowing, credit spreads and economic activity in emerging economies: an empirical investigation. Journal of International Economics 118: 160–178. https://doi.org/10.1016/j.jinteco.2018.11.010
@@ -49,15 +60,9 @@ Contribution: Evidence that the international equity channel, not bond spreads, 
 - Mendoza, E. G. and K. A. Smith (2006). Quantitative implications of a debt-deflation theory of sudden stops and asset prices. Journal of International Economics 70(1): 82–114. https://doi.org/10.1016/j.jinteco.2005.06.016
 - Rey, H. (2015). Dilemma not trilemma: the global financial cycle and monetary policy independence. NBER Working Paper 21162. https://doi.org/10.3386/w21162
 
-## Versions
-
-- Published article (Wiley): https://doi.org/10.1111/obes.12595
-- Working paper version, December 2023 (PDF): https://yangguanyi.github.io/pdf/Horvath-Yang-2023-Global-Financial-Risk-Equity-Returns-Emerging-Countries-WP.pdf
-- RePEc listing: https://ideas.repec.org/f/pya376.html
-
-JEL: E32, E37, F34, F37, G15
-Keywords: global financial risk, VIX, emerging market economies, equity returns, country spreads, capital flows, panel SVAR, global financial cycle
-
-## Cite
+## Citation
 
 Jaroslav Horvath, Guanyi Yang (2024). Global Financial Risk, Equity Returns and Economic Activity in Emerging Countries. Oxford Bulletin of Economics and Statistics, Vol. 86, No. 3, pp. 672–689. https://doi.org/10.1111/obes.12595
+
+BibTeX: https://yangguanyi.github.io/papers/global-financial-risk-equity-returns-emerging-markets/citation.bib
+RIS: https://yangguanyi.github.io/papers/global-financial-risk-equity-returns-emerging-markets/citation.ris

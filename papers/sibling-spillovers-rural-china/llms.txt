@@ -1,47 +1,61 @@
 # Sibling Spillovers in Rural China: A Story of Sisters
 
-> In rural China, each year a younger sibling spends in school raises the elder sibling’s Chinese test score by 1.42 percentage points, and by 2.26 points when the younger sibling is a girl; there is no significant effect when the younger sibling is a boy. The channel appears to be a more academic home environment rather than more parental spending or attention.
+> School-entry eligibility identifies education spillovers from younger to older siblings in rural China, with the strongest evidence among younger sisters.
 
-Authors: Cynthia Bansak (St. Lawrence University); Xuan Jiang (Jinan University); Guanyi Yang (Colorado College)
-Status: China Economic Review, Vol. 76, 101873. DOI 10.1016/j.chieco.2022.101873
+Authors: Cynthia Bansak, Xuan Jiang, Guanyi Yang
+Status: Published article
+Publication: China Economic Review, Vol. 76, 101873
+Publication date: 2022-12
 Page: https://yangguanyi.github.io/papers/sibling-spillovers-rural-china/
-
-## What is this paper about?
-
-In rural China, each year a younger sibling spends in school raises the elder sibling’s Chinese test score by 1.42 percentage points, and by 2.26 points when the younger sibling is a girl; there is no significant effect when the younger sibling is a boy. The channel appears to be a more academic home environment rather than more parental spending or attention.
+Research note updated: 2026-11-09
+DOI: https://doi.org/10.1016/j.chieco.2022.101873
+Version: Summary based on the published article linked here. Earlier working-paper versions are listed separately below.
 
 ## Abstract
 
 We study sibling spillover effects on the school performance of the elder sibling from the younger sibling using data on multi-children households in rural China. Using a cumulative measure of expected lawful years in school as an instrumental variable, we find a significant increase in school test scores for Chinese language of elder siblings for every year of schooling of the younger sibling. The strongest spillover effects occur when the younger sibling is a girl. Such increases in test scores come from a more intense academic atmosphere within a household when both children enroll in school and are not attributed to differential parental education investments or time inputs. Our findings suggest that policies promoting girls’ education, pre-elementary school age education programs, and after school public resources can have multiplier effects through sibling spillovers.
 
-## Key results
+## Key findings
 
-- Preferred IV estimate: +1.42 percentage points on the elder sibling’s Chinese score (100-point scale) per year the younger sibling is in school; math effects are positive but not statistically significant.
-- Younger sister: +2.26 points per year (significant at 5 percent). Younger brother: no significant effect.
-- Narrowing the younger sibling’s age window to 5–8 raises the estimate to as much as 4.93 points; OLS estimates are near zero, consistent with downward bias.
-- The spillover is 3.1 points smaller per year when the elder child’s school is farther than the median distance from home, supporting a home-environment mechanism.
-- No change in education spending on the elder child or in parental presence when the younger child starts school.
-- First-stage Kleibergen-Paap F statistic above 140.
+- The preferred IV estimate is 1.420 additional points on the older sibling's Chinese score per year of younger-sibling schooling, with a standard error of 0.663. It is significant at 5 percent and uses 289 observations. The mathematics estimate is positive but not statistically significant (Table 2).
+- The younger-sister estimate is 2.256 points, significant at 5 percent, in a sample of 103. The younger-brother estimate is 1.251 points and is not statistically significant. These separate significance results do not establish a significant difference between the two groups (Table 4).
+- Estimates vary across the younger-sibling age windows considered. Restricting ages to 5 to 8 gives 4.930 points with 151 observations, so the larger estimate should be read alongside its smaller sample (Table 3).
+- The estimated spillover is about 3.1 points smaller when the older child's school is farther than the median distance from home; this interaction is significant at 10 percent. This is consistent with a household learning mechanism, rather than direct evidence on study time (Table 5).
+- The authors find no statistically detectable schooling-related change in spending on the older child or in parental presence, an imperfect proxy for parental time and attention (Table A3).
+- The first-stage Kleibergen-Paap F statistic is 91.29 in the preferred specification with 289 observations. The baseline specification with 346 observations has an F statistic of 144.66 (Tables 2 and A2).
 
-## Limitations and scope (what the paper does not show)
+## Scope and interpretation
 
-- Sample of 346 elder children from two-child households in the RUMiC Rural Household Survey (2008–2009), nine provinces; small sample limits subgroup analysis.
-- Test scores are self-reported (though recorded in school booklets); only Chinese results are statistically significant.
-- The home-environment mechanism is inferred from school-home distance, not from observed study time.
+- The baseline sample has 346 older children from rural two-child households in nine provinces; the preferred specification uses 289. The younger-sister subgroup contains 103 observations.
+- Exam scores are self-reported and rescaled to a 100-point scale. The relevant scores come from one survey wave, and only Chinese-score effects are statistically significant.
+- Identification relies on school-entry eligibility affecting older-sibling scores through the younger child's schooling. The home-environment mechanism is inferred from distance and ancillary regressions, not observed study time.
+- The paper does not evaluate a specific preschool or after-school intervention, long-term attainment, or earnings.
 
-## Important context and definitions
+## Context
 
 - The direction of the spillover is younger to elder, the reverse of most of the sibling-spillover literature.
 - The instrument is lawful years of schooling implied by China’s Compulsory Education Law cutoff: children must turn six by August 31 to enroll that September.
 - Earlier versions circulated as “Sibling Spillover in Rural China: A Story of Sisters and Daughters” (IZA Discussion Paper 13127; EdWorkingPaper 21-465).
 
-## Data and methods
+## Data and approach
 
-Data: Rural Household Survey of the Longitudinal Survey on Rural Urban Migration in China (RUMiC), 2008 and 2009 waves; two-child households with the younger sibling aged 3–9 in 2008; Chinese and math exam scores standardized to 100.
-Method: Two-stage least squares using cumulative lawful years of schooling (from the August 31 birth-date cutoff) as the instrument for the younger sibling’s actual years in school; grade, province and ethnicity fixed effects; parental age, wages and education; county girl ratio; standard errors clustered at the city level.
-Contribution: The first study to estimate a school-performance spillover from a younger sibling to an elder sibling, and to show it is driven by younger sisters, in a low-income setting.
+Data: RUMiC Rural Household Survey, 2008 and 2009 waves, in nine Chinese provinces. The baseline sample is 346 older children in two-child rural households whose younger sibling was aged 3 to 9 in 2008. Chinese and mathematics examination scores are rescaled to 100 points; the preferred regression uses 289 observations.
 
-## Related work
+Method: Two-stage least squares instruments actual years of younger-sibling schooling with cumulative lawful schooling implied by the sixth-birthday school-entry cutoff. Regressions include child, parent, household and geographic controls, with standard errors clustered by city. This is an IV design using school-entry eligibility, not a conventional local regression discontinuity design.
+
+Contribution: Studies education spillovers from younger siblings to older siblings in rural China, with evidence that is strongest for younger sisters and consistent with changes in the household learning environment.
+
+## Paper and resources
+
+- [Read published paper (PDF)](https://yangguanyi.github.io/papers/sibling-spillovers-rural-china/paper.pdf)
+- [Published article (Elsevier)](https://doi.org/10.1016/j.chieco.2022.101873)
+- [Published PDF in the author's repository](https://raw.githubusercontent.com/yangguanyi/Published/main/2022_CER_Bansak_Jiang_Yang.pdf)
+- [Working paper version, September 2022 (PDF)](https://yangguanyi.github.io/pdf/Bansak-Jiang-Yang-2022-Sibling-Spillovers-Rural-China-WP.pdf)
+- [EdWorkingPaper 21-465 (Annenberg Institute, Brown University)](https://www.edworkingpapers.com/ai21-465)
+- [IZA Discussion Paper 13127](https://www.iza.org/publications/dp/13127/sibling-spillover-in-rural-china-a-story-of-sisters-and-daughters)
+- [RePEc listing](https://ideas.repec.org/f/pya376.html)
+
+## Related literature
 
 - Black, S. E., S. Breining, D. N. Figlio, J. Guryan, K. Karbownik, H. S. Nielsen, J. Roth and M. Simonsen (2021). Sibling spillovers. Economic Journal 131(633): 101–128 (online 2020). https://doi.org/10.1093/ej/ueaa074
 - Qureshi, J. A. (2018). Siblings, teachers, and spillovers on academic achievement. Journal of Human Resources 53(1): 272–297. https://doi.org/10.3368/jhr.53.1.0815-7347r1
@@ -50,17 +64,9 @@ Contribution: The first study to estimate a school-performance spillover from a 
 - Jakiela, P., O. Ozier, L. Fernald and H. Knauer (2020). Big sisters. World Bank Policy Research Working Paper 9454. https://doi.org/10.1596/1813-9450-9454
 - Yang, G. and C. Bansak (2020). Does wealth matter? An assessment of China’s rural-urban migration on the education of left-behind children. China Economic Review 59: 101365. https://doi.org/10.1016/j.chieco.2019.101365
 
-## Versions
-
-- Published article (Elsevier): https://doi.org/10.1016/j.chieco.2022.101873
-- Working paper version, September 2022 (PDF): https://yangguanyi.github.io/pdf/Bansak-Jiang-Yang-2022-Sibling-Spillovers-Rural-China-WP.pdf
-- EdWorkingPaper 21-465 (Annenberg Institute, Brown University): https://www.edworkingpapers.com/ai21-465
-- IZA Discussion Paper 13127: https://www.iza.org/publications/dp/13127/sibling-spillover-in-rural-china-a-story-of-sisters-and-daughters
-- RePEc listing: https://ideas.repec.org/f/pya376.html
-
-JEL: I21, I24, J13, J16, O15
-Keywords: human capital, peer effect, sibling spillover, rural China, sisters, girls, school enrollment, intra-household allocation, intra-household externality
-
-## Cite
+## Citation
 
 Cynthia Bansak, Xuan Jiang, Guanyi Yang (2022). Sibling Spillovers in Rural China: A Story of Sisters. China Economic Review, Vol. 76, 101873. https://doi.org/10.1016/j.chieco.2022.101873
+
+BibTeX: https://yangguanyi.github.io/papers/sibling-spillovers-rural-china/citation.bib
+RIS: https://yangguanyi.github.io/papers/sibling-spillovers-rural-china/citation.ris

@@ -1,48 +1,61 @@
 # Better Late Than Never: Macroeconomic Impact of Intermittent College Enrollment and Tuition Subsidies
 
-> Allowing people to enroll in college at any age, rather than only right after high school, accounts for about one quarter of the total welfare value of college in a life-cycle general equilibrium model; the gain is largest for people who start adult life with the least wealth. A nationwide tuition-free program raises the share with a bachelor’s degree from 25 to 78 percent and welfare by nearly 40 percent.
+> A life-cycle model measures how the option to delay or return to college helps households invest in skills and respond to labor-market risk.
 
-Authors: Guanyi Yang (Colorado College)
-Status: Journal of Economic Dynamics and Control, Vol. 181, 105219 (available online 21 November 2025). DOI 10.1016/j.jedc.2025.105219
+Authors: Guanyi Yang
+Status: Published article
+Publication: Journal of Economic Dynamics and Control, Vol. 181, 105219 (available online 21 November 2025)
+Publication date: 2025-12
 Page: https://yangguanyi.github.io/papers/intermittent-college-enrollment/
-
-## What is this paper about?
-
-Allowing people to enroll in college at any age, rather than only right after high school, accounts for about one quarter of the total welfare value of college in a life-cycle general equilibrium model; the gain is largest for people who start adult life with the least wealth. A nationwide tuition-free program raises the share with a bachelor’s degree from 25 to 78 percent and welfare by nearly 40 percent.
+Research note updated: 2026-11-09
+DOI: https://doi.org/10.1016/j.jedc.2025.105219
+Version: Summary based on the published article. The download is a smaller PDF with the same text and research figures. The original publisher PDF is also linked below.
 
 ## Abstract
 
 People often delay starting college or temporarily leave college to work. To examine the welfare implications of intermittent college attendance, I incorporate flexible age-by-age college enrollment choice in a life-cycle model in general equilibrium. College serves as an investment device for the young and reduces risk for the old. Removing flexible access reduces the total welfare value of college by one quarter. Moreover, higher wealth and better human capital preparedness at age 18 incentivize early-age degree completion. However, accessing college at a later age matters more for those who are initially less advantaged. Thus, policies that alleviate financial costs generate considerable long-term welfare improvements.
 
-## Key results
+## Key findings
 
-- In the NLSY79, people move between college and work 1.7 times on average; about two-thirds of bachelor’s degree holders had some interruption; 16 percent finished after age 30 and over 10 percent after 35. Only 9.3 percent of the sample completed a BA by 22. NLSY97 and CPS cohorts show the pattern is stronger in later cohorts.
-- Removing flexible access (college only at 19, no return) lowers welfare by 3.7 percent of consumption and BA attainment by 28 percent; removing college entirely lowers welfare by 14.8 percent. Flexibility is therefore about one quarter of college’s gross welfare value.
-- Individuals in the lowest wealth bin value flexible access about twice as much as those in the highest; about 60 percent of the lowest wealth bin could not finish a degree without it.
-- Three channels: the general-equilibrium price channel is small; the investment value of college peaks at age 19 and disappears by about 24; the risk-reduction value emerges after 22 and peaks around 24, removing about 35 percent of the welfare cost of risk.
-- A nationwide tuition-free program raises BA attainment from 25 to 78 percent and welfare by 39.6 percent, financed by an 8 percent higher lump-sum tax. A labor-income-tax exemption for part-time student-workers raises BA attainment by 17 percent and welfare by 1.6 percent, with gains concentrated at ages 24–30 and among low and middle endowment groups.
-- With a market-based borrowing limit, flexible access accounts for 8.6 of the 9.1 percent welfare value of college — most of it.
+- In the NLSY79 sample, 9.29 percent complete a bachelor's degree by age 22 and 17.03 percent complete one after a nontraditional path, which includes delayed initial entry as well as interruption. Among graduates, 16.41 percent finish after age 30. NLSY97 and CPS cohorts provide checks on later enrollment patterns (Table 1).
+- Restricting initial enrollment to age 19 and preventing reentry reduces consumption-equivalent welfare by 3.74 percent and bachelor's attainment by 28.48 percent relative to baseline. Removing college entirely reduces welfare by 14.77 percent. The ratio of these welfare losses is about one quarter (Table 6).
+- Removing flexible access produces larger reductions in degree attainment for people with low initial wealth or human capital. The roughly 60 percent decline for the lowest endowment bins is a relative change in BA attainment, not a percentage of all people in those bins.
+- In the calibrated decomposition, the investment value of college peaks at 19 and nearly disappears by 24, while the risk-reduction value emerges after 22 and peaks near 24. These model-specific ages do not establish an empirical cutoff for adult college returns.
+- In a long-run model counterfactual, nationwide free tuition raises BA attainment from 25 to about 78 percent and consumption-equivalent welfare by 39.6 percent, financed by an 8 percent higher lump-sum tax. Exempting part-time student-workers from labor income taxes raises attainment by 16.54 percent relative to baseline and average welfare by 1.62 percent, but the lowest initial-human-capital group loses 2.3 percent after taxes and equilibrium prices adjust.
+- With a market-based borrowing limit, removing flexible access costs 8.57 percent in consumption-equivalent welfare, compared with 9.05 percent from removing college entirely. The importance of flexibility increases under this tighter borrowing assumption.
 
-## Limitations and scope (what the paper does not show)
+## Scope and interpretation
 
 - U.S. data; the NLSY79 follows cohorts born 1957–1964 (the paper checks NLSY97 and CPS synthetic cohorts and argues NLSY79 understates intermittence).
 - The model abstracts from race, gender, geography and industry; a BA is defined as 16 years of completed schooling.
 - Baseline uses a natural debt limit; tighter limits are robustness checks. Shocks take two values to keep computation tractable.
 - Welfare is measured as consumption equivalence, not financial returns to college.
+- Policy results are long-run stationary-equilibrium counterfactuals, not causal evaluations of actual tuition-free programs.
+- Average gains can conceal losses for particular initial-endowment groups.
 
-## Important context and definitions
+## Context
 
 - “Intermittent” includes delayed entry after high school, stopout (temporary exit) and re-enrollment, not only dropout.
 - Initial conditions at age 18 are a human capital proxy (AFQT score) and a wealth proxy (average family income at 17–19), fed into the model as an empirical joint distribution rather than a fitted normal.
 - The paper was circulated earlier under the title “Best Time for College? A Tale of Two Endowments”.
 
-## Data and methods
+## Data and approach
 
 Data: NLSY79 (1979–2016) for life-cycle enrollment, completion and initial conditions; NLSY97 and CPS ASEC synthetic cohorts for robustness; detrended CPS wages 1992–2016 for calibration.
-Method: Overlapping-generations life-cycle model with incomplete markets in general equilibrium (Huggett, Ventura and Yaron 2011 lineage). Each year individuals choose full-time work, part-time work with part-time school, full-time school, or non-employment; human capital accumulates on the job or in college with a sheepskin effect; welfare measured as consumption equivalence (Mukoyama 2010). Model earnings dynamics match Guvenen’s RIP and HIP estimates.
-Contribution: The first paper to evaluate the welfare value of having access to college at each age, and to separate the investment and risk-reduction roles of college over the life cycle.
 
-## Related work
+Method: Overlapping-generations life-cycle model with incomplete markets in general equilibrium (Huggett, Ventura and Yaron 2011 lineage). Each year individuals choose full-time work, part-time work with part-time school, full-time school, or non-employment; human capital accumulates on the job or in college with a sheepskin effect; welfare measured as consumption equivalence (Mukoyama 2010). Model earnings dynamics match Guvenen’s RIP and HIP estimates.
+
+Contribution: Evaluates the welfare value of access to college at each age and separates the investment and risk-reduction roles of college over the life cycle.
+
+## Paper and resources
+
+- [Read published paper (PDF)](https://yangguanyi.github.io/papers/intermittent-college-enrollment/paper.pdf)
+- [Published article (Elsevier)](https://doi.org/10.1016/j.jedc.2025.105219)
+- [Published PDF in the author's repository](https://raw.githubusercontent.com/yangguanyi/Published/main/2025_JEDC_Yang.pdf)
+- [Working paper version (PDF)](https://yangguanyi.github.io/pdf/Yang-2025-Better-Late-Than-Never-Intermittent-College-Enrollment-WP.pdf)
+- [RePEc listing](https://ideas.repec.org/f/pya376.html)
+
+## Related literature
 
 - Huggett, M., G. Ventura and A. Yaron (2011). Sources of lifetime inequality. American Economic Review 101(7): 2923–2954. https://doi.org/10.1257/aer.101.7.2923
 - Castex, G. (2017). College risk and return. Review of Economic Dynamics 26: 91–112. https://doi.org/10.1016/j.red.2017.03.002
@@ -53,15 +66,9 @@ Contribution: The first paper to evaluate the welfare value of having access to 
 - Arcidiacono, P., E. Aucejo, A. Maurel and T. Ransom (2025). College attrition and the dynamics of information revelation. Journal of Political Economy 133(1): 53–110. https://doi.org/10.1086/732526
 - Yang, G. and B. Casner (2021). How much does schooling disutility matter? Research in Economics 75(1): 87–95. https://doi.org/10.1016/j.rie.2020.11.004
 
-## Versions
-
-- Published article (Elsevier): https://doi.org/10.1016/j.jedc.2025.105219
-- Working paper version (PDF): https://yangguanyi.github.io/pdf/Yang-2025-Better-Late-Than-Never-Intermittent-College-Enrollment-WP.pdf
-- RePEc listing: https://ideas.repec.org/f/pya376.html
-
-JEL: E2, I24, J24, J31
-Keywords: heterogeneous agents, incomplete markets, life-cycle model, lifecycle inequality, general equilibrium, labor market risk, human capital accumulation, intermittent enrollment, delayed college completion, college stopout, risk and schooling, self-insurance, consumption-equivalent welfare, tuition subsidies, education policy
-
-## Cite
+## Citation
 
 Guanyi Yang (2025). Better Late Than Never: Macroeconomic Impact of Intermittent College Enrollment and Tuition Subsidies. Journal of Economic Dynamics and Control, Vol. 181, 105219 (available online 21 November 2025). https://doi.org/10.1016/j.jedc.2025.105219
+
+BibTeX: https://yangguanyi.github.io/papers/intermittent-college-enrollment/citation.bib
+RIS: https://yangguanyi.github.io/papers/intermittent-college-enrollment/citation.ris
