@@ -54,8 +54,7 @@ as an Actions artifact. It does not run on pull requests or fork code.
 
 Manual and automatic runs also require the latest `github-pages` deployment to have succeeded at the current default-branch commit, with the expected destination and a matching successful trusted Pages run. These conditions are checked again after live-byte verification, immediately before POST.
 
-The hook still needs an observed production run after this workflow is
-published. A manual dispatch on `main` is also available, with `submit=false`
+The first production hook was observed on 9 November 2026: [run 42627666674](https://github.com/yangguanyi/yangguanyi.github.io/actions/runs/42627666674) followed successful Pages run 42627595703, verified the live bytes, and received HTTP 200 acceptance for the 21 changed HTML URLs at commit `ffae0984add96d08a90d66c0af3d4b677e8c8aeb`. Unchanged PDFs were excluded. Receipt artifact: `13680225104`. A manual dispatch on `main` is also available, with `submit=false`
 by default. Successful live deployment and HTTP 200 receipt must be reported
 separately from merely publishing the workflow file.
 
