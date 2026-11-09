@@ -819,7 +819,7 @@ def copy_assets():
             copy_file(ROOT / p["pdf_path"], OUT / p["pdf_path"])
     for source in ROOT.iterdir():
         if source.is_file() and (
-            source.name == "CNAME"
+            source.name in ("CNAME", "BingSiteAuth.xml")
             or source.name.startswith("favicon")
             or (source.suffix in (".html", ".txt") and source.name not in ("index.html", "llms.txt", "robots.txt"))
         ):
