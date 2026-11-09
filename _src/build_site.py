@@ -22,7 +22,20 @@ spec.loader.exec_module(pd)
 with (HERE / "dois.json").open(encoding="utf-8") as handle:
     DOIS = json.load(handle)
 
-BASE = "https://yangguanyi.github.io"
+PRODUCTION_BASE = "https://yangguanyi.github.io"
+BASE = PRODUCTION_BASE
+GA_MEASUREMENT_ID = "G-Y4XCSGT8G1"
+GOOGLE_ANALYTICS_TAG = f"""<script async src="https://www.googletagmanager.com/gtag/js?id={GA_MEASUREMENT_ID}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {{ dataLayer.push(arguments); }}
+  gtag('js', new Date());
+  gtag('config', '{GA_MEASUREMENT_ID}', {{
+    allow_google_signals: false,
+    allow_ad_personalization_signals: false
+  }});
+</script>
+"""
 OUT = ROOT
 # Change this only when site-level content changes, not on each rebuild.
 SITE_REVISED = "2026-11-09"
@@ -287,11 +300,12 @@ def page(title, body, desc, path, entity=None, extra_head="", active=None, modif
     ld = json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False).replace("<", "\\u003c")
     og_type = "article" if path.startswith("papers/") else "website"
     current_home = ' aria-current="page"' if not path else ""
+    analytics_tag = GOOGLE_ANALYTICS_TAG if BASE == PRODUCTION_BASE else ""
     return f"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+{analytics_tag}<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
 <meta name="author" content="{e(NAME)}">
