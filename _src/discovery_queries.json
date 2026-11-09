@@ -75,7 +75,14 @@
       "target_slug": "dark-skies-great-sand-dunes",
       "question": "Find economics research that values reductions in light pollution for outdoor recreation and national parks.",
       "kind": "broad_literature_question",
-      "tested": false
+      "tested": true,
+      "run_id": "codex-broad-2026-11-09",
+      "test_date_utc": "2026-11-09",
+      "paper_retrieved": true,
+      "research_library_cited": false,
+      "research_session": "a",
+      "research_case_id": "A1",
+      "independence_qualification": false
     },
     {
       "id": "dark-skies-great-sand-dunes:topical",
@@ -108,7 +115,14 @@
       "target_slug": "racial-disparities-hiring-discrimination",
       "question": "What research connects racial discrimination in labor markets to household wealth inequality?",
       "kind": "broad_literature_question",
-      "tested": false
+      "tested": true,
+      "run_id": "codex-broad-2026-11-09",
+      "test_date_utc": "2026-11-09",
+      "paper_retrieved": true,
+      "research_library_cited": false,
+      "research_session": "a",
+      "research_case_id": "A2",
+      "independence_qualification": false
     },
     {
       "id": "racial-disparities-hiring-discrimination:topical",
@@ -141,7 +155,14 @@
       "target_slug": "intermittent-college-enrollment",
       "question": "Find economics papers on the value of returning to college during adulthood when earnings are uncertain.",
       "kind": "broad_literature_question",
-      "tested": false
+      "tested": true,
+      "run_id": "codex-broad-2026-11-09",
+      "test_date_utc": "2026-11-09",
+      "paper_retrieved": true,
+      "research_library_cited": false,
+      "research_session": "a",
+      "research_case_id": "A3",
+      "independence_qualification": false
     },
     {
       "id": "intermittent-college-enrollment:topical",
@@ -174,7 +195,14 @@
       "target_slug": "informality-unemployment-small-open-economies",
       "question": "What explains relatively small unemployment fluctuations in developing economies with large informal sectors?",
       "kind": "broad_literature_question",
-      "tested": false
+      "tested": true,
+      "run_id": "codex-broad-2026-11-09",
+      "test_date_utc": "2026-11-09",
+      "paper_retrieved": true,
+      "research_library_cited": false,
+      "research_session": "b",
+      "research_case_id": "B1",
+      "independence_qualification": false
     },
     {
       "id": "informality-unemployment-small-open-economies:topical",
@@ -207,7 +235,14 @@
       "target_slug": "sibling-spillovers-rural-china",
       "question": "What research measures how one child's schooling affects the learning of other children in the household?",
       "kind": "broad_literature_question",
-      "tested": false
+      "tested": true,
+      "run_id": "codex-broad-2026-11-09",
+      "test_date_utc": "2026-11-09",
+      "paper_retrieved": true,
+      "research_library_cited": false,
+      "research_session": "b",
+      "research_case_id": "B2",
+      "independence_qualification": false
     },
     {
       "id": "sibling-spillovers-rural-china:topical",
@@ -240,7 +275,14 @@
       "target_slug": "global-financial-risk-equity-returns-emerging-markets",
       "question": "How do global financial shocks affect economic activity in emerging markets through equity markets?",
       "kind": "broad_literature_question",
-      "tested": false
+      "tested": true,
+      "run_id": "codex-broad-2026-11-09",
+      "test_date_utc": "2026-11-09",
+      "paper_retrieved": true,
+      "research_library_cited": false,
+      "research_session": "b",
+      "research_case_id": "B3",
+      "independence_qualification": false
     },
     {
       "id": "global-financial-risk-equity-returns-emerging-markets:topical",
@@ -273,7 +315,14 @@
       "target_slug": "left-behind-children-parental-migration-wealth",
       "question": "What research explains how parental migration and household resources affect the education of children who stay behind?",
       "kind": "broad_literature_question",
-      "tested": false
+      "tested": true,
+      "run_id": "codex-broad-2026-11-09",
+      "test_date_utc": "2026-11-09",
+      "paper_retrieved": false,
+      "research_library_cited": false,
+      "research_session": "b",
+      "research_case_id": "B4",
+      "independence_qualification": false
     },
     {
       "id": "left-behind-children-parental-migration-wealth:topical",
@@ -306,7 +355,14 @@
       "target_slug": "temporary-employment-us-welfare",
       "question": "What economic research evaluates the welfare and business cycle effects of temporary employment contracts?",
       "kind": "broad_literature_question",
-      "tested": false
+      "tested": true,
+      "run_id": "codex-broad-2026-11-09",
+      "test_date_utc": "2026-11-09",
+      "paper_retrieved": true,
+      "research_library_cited": false,
+      "research_session": "c",
+      "research_case_id": "C1",
+      "independence_qualification": true
     },
     {
       "id": "temporary-employment-us-welfare:topical",
@@ -339,7 +395,14 @@
       "target_slug": "social-norms-information-green-fee",
       "question": "What experiments compare information about other people's participation with information about contribution amounts when funding public goods?",
       "kind": "broad_literature_question",
-      "tested": false
+      "tested": true,
+      "run_id": "codex-broad-2026-11-09",
+      "test_date_utc": "2026-11-09",
+      "paper_retrieved": true,
+      "research_library_cited": false,
+      "research_session": "c",
+      "research_case_id": "C2",
+      "independence_qualification": false
     },
     {
       "id": "social-norms-information-green-fee:topical",
@@ -372,7 +435,14 @@
       "target_slug": "schooling-disutility",
       "question": "How do nonmonetary costs of education change the relationship between wealth, risk, and schooling choices?",
       "kind": "broad_literature_question",
-      "tested": false
+      "tested": true,
+      "run_id": "codex-broad-2026-11-09",
+      "test_date_utc": "2026-11-09",
+      "paper_retrieved": true,
+      "research_library_cited": false,
+      "research_session": "c",
+      "research_case_id": "C3",
+      "independence_qualification": false
     },
     {
       "id": "schooling-disutility:topical",
@@ -405,7 +475,14 @@
       "target_slug": "college-major-chinese-immigrants",
       "question": "What economics research links undergraduate fields of study to immigrants' employment and earnings in the United States?",
       "kind": "broad_literature_question",
-      "tested": false
+      "tested": true,
+      "run_id": "codex-broad-2026-11-09",
+      "test_date_utc": "2026-11-09",
+      "paper_retrieved": false,
+      "research_library_cited": false,
+      "research_session": "a",
+      "research_case_id": "A4",
+      "independence_qualification": true
     },
     {
       "id": "college-major-chinese-immigrants:topical",
@@ -474,6 +551,27 @@
       "new_site_cited": true,
       "observations": "The paper appeared first in a two-paper reading list. After finding the paper through RePEc, the researcher followed an existing Google Sites link to the new research index, paper page, and full PDF. The final answer cited the PDF hosted on the new site.",
       "scope": "One internal search-enabled AI session. Not a separate consumer-product ranking or a before/after effect."
+    }
+  ],
+  "broad_question_runs": [
+    {
+      "id": "codex-broad-2026-11-09",
+      "date_utc": "2026-11-09",
+      "product": "Codex desktop research agents",
+      "tool": "web.run",
+      "exact_model": "unknown",
+      "search_provider": "not exposed",
+      "questions": 11,
+      "target_papers_retrieved": 9,
+      "research_library_citations": 0,
+      "design": "Three fresh agent contexts, with multiple questions researched in each. Target author, titles, site, and local project context were not supplied.",
+      "qualifications": [
+        "Questions within each agent context were not independent sessions.",
+        "A4 used one exploratory query with Yang learned in another case. The target was not recommended.",
+        "C1 used one refinement with Guanyi learned in another case. That query is excluded as discovery evidence; an earlier neutral query found the target.",
+        "This is an internal tool-based discovery observation, not a consumer AI or Google ranking measurement, and not a before-and-after deployment effect.",
+        "Publisher fetch failures and differences between working papers and published versions are retained in the local run records."
+      ]
     }
   ]
 }

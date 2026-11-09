@@ -67,6 +67,8 @@ produces no changed URLs. These receipts are retained for 90 days.
 
 ## Receipt states and recovery
 
+The subsequent automatic [run 42628723069](https://github.com/yangguanyi/yangguanyi.github.io/actions/runs/42628723069) read the prior receipt, verified Pages deployment 42628647021 at `e4b78e22be84266715bf258349febdc763cd8987`, and recorded `no_changes` without a POST. This confirms the unchanged-content path with production receipt history. The account-provided `BingSiteAuth.xml` is preserved by the builder and excluded from notifications.
+
 - `dry_run`: plan only, with no website or IndexNow HTTP requests.
 - `no_changes`: no eligible changed URLs.
 - `accepted`: HTTP 200, notifications received.
